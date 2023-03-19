@@ -16,13 +16,13 @@
 <link href="../../ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
 <link href="../../npm/bootstrap-icons%401.4.1/font/bootstrap-icons.css" rel="stylesheet">
 
-<link href="lib/animate/animate.min.css" rel="stylesheet">
-<link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
-<link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet">
+<link href="{{ asset('asset/lib/animate/animate.min.css') }}" rel="stylesheet">
+<link href="{{ asset('asset/lib/owlcarousel/assets/owl.carousel.min.css') }}" rel="stylesheet">
+<link href="{{ asset('asset/lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css') }}" rel="stylesheet">
 
-<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="{{ asset('asset/css/bootstrap.min.css') }}" rel="stylesheet">
 
-<link href="css/style.css" rel="stylesheet">
+<link href="{{ asset('asset/css/style.css') }}" rel="stylesheet">
 </head>
 <body>
 <div class="container-xxl bg-white p-0">
@@ -104,7 +104,7 @@
 <div id="header-carousel" class="carousel slide" data-bs-ride="carousel">
 <div class="carousel-inner">
 <div class="carousel-item active">
-<img class="w-100" src="img/carousel-1.jpg" alt="Image">
+<img class="w-100" src="{{ asset('asset/img/carousel-1.jpg') }}" alt="Image">
 <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
 <div class="p-3" style="max-width: 700px;">
 <h6 class="section-title text-white text-uppercase mb-3 animated slideInDown">Luxury Living</h6>
@@ -115,7 +115,7 @@
 </div>
 </div>
 <div class="carousel-item">
-<img class="w-100" src="img/carousel-2.jpg" alt="Image">
+<img class="w-100" src="{{ asset('asset/img/carousel-2.jpg') }}" alt="Image">
 <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
 <div class="p-3" style="max-width: 700px;">
 <h6 class="section-title text-white text-uppercase mb-3 animated slideInDown">Luxury Living</h6>
@@ -222,16 +222,16 @@
 <div class="col-lg-6">
 <div class="row g-3">
 <div class="col-6 text-end">
-<img class="img-fluid rounded w-75 wow zoomIn" data-wow-delay="0.1s" src="img/about-1.jpg" style="margin-top: 25%;">
+<img class="img-fluid rounded w-75 wow zoomIn" data-wow-delay="0.1s" src="{{ asset('asset/img/about-1.jpg') }}" style="margin-top: 25%;">
 </div>
 <div class="col-6 text-start">
-<img class="img-fluid rounded w-100 wow zoomIn" data-wow-delay="0.3s" src="img/about-2.jpg">
+<img class="img-fluid rounded w-100 wow zoomIn" data-wow-delay="0.3s" src="{{ asset('asset/img/about-2.jpg') }}">
 </div>
 <div class="col-6 text-end">
-<img class="img-fluid rounded w-50 wow zoomIn" data-wow-delay="0.5s" src="img/about-3.jpg">
+<img class="img-fluid rounded w-50 wow zoomIn" data-wow-delay="0.5s" src="{{ asset('asset/img/about-3.jpg') }}">
 </div>
 <div class="col-6 text-start">
-<img class="img-fluid rounded w-75 wow zoomIn" data-wow-delay="0.7s" src="img/about-4.jpg">
+<img class="img-fluid rounded w-75 wow zoomIn" data-wow-delay="0.7s" src="{{ asset('asset/img/about-4.jpg') }}">
 </div>
 </div>
 </div>
@@ -243,14 +243,14 @@
 <div class="container-xxl py-5">
 <div class="container">
 <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
-<h6 class="section-title text-center text-primary text-uppercase">Our Rooms</h6>
-<h1 class="mb-5">Explore Our <span class="text-primary text-uppercase">Rooms</span></h1>
+<h6 class="section-title text-center text-primary text-uppercase">Reserver Rapidement</h6>
+<h1 class="mb-5">Explorer Rapidement <span class="text-primary text-uppercase">Les Chambres</span></h1>
 </div>
 <div class="row g-4">
 <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
 <div class="room-item rounded">
 <div class="position-relative">
-<img class="img-fluid" src="img/room-1.jpg" alt="">
+<img class="img-fluid" src="{{ asset('asset/img/room-1.jpg') }}" alt="">
 <small class="position-absolute start-0 top-100 translate-middle-y bg-primary text-white rounded py-1 px-3 ms-4">$100/Night</small>
 </div>
 <div class="p-4 mt-2">
@@ -280,7 +280,7 @@
 <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
 <div class="room-item rounded">
 <div class="position-relative">
-<img class="img-fluid" src="img/room-2.jpg" alt="">
+<img class="img-fluid" src="{{ asset('asset/img/room-2.jpg') }}" alt="">
 <small class="position-absolute start-0 top-100 translate-middle-y bg-primary text-white rounded py-1 px-3 ms-4">$100/Night</small>
 </div>
 <div class="p-4 mt-2">
@@ -310,7 +310,7 @@
 <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.6s">
 <div class="room-item rounded">
 <div class="position-relative">
-<img class="img-fluid" src="img/room-3.jpg" alt="">
+<img class="img-fluid" src="{{ asset('asset/img/room-3.jpg') }}" alt="">
 <small class="position-absolute start-0 top-100 translate-middle-y bg-primary text-white rounded py-1 px-3 ms-4">$100/Night</small>
 </div>
 <div class="p-4 mt-2">
@@ -380,82 +380,8 @@
 </div>
 
 
-<div class="container-xxl py-5">
-<div class="container">
-<div class="text-center wow fadeInUp" data-wow-delay="0.1s">
-<h6 class="section-title text-center text-primary text-uppercase">Our Services</h6>
-<h1 class="mb-5">Explore Our <span class="text-primary text-uppercase">Services</span></h1>
-</div>
-<div class="row g-4">
-<div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-<a class="service-item text-center rounded" href="">
-<div class="service-icon bg-transparent border rounded mx-auto mb-4 p-1">
-<div class="w-100 h-100 border rounded d-flex align-items-center justify-content-center">
-<i class="fa fa-hotel fa-2x text-primary"></i>
-</div>
-</div>
-<h5 class="mb-3">Rooms & Appartment</h5>
-<p class="text-body mb-0">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet lorem.</p>
-</a>
-</div>
-<div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.2s">
-<a class="service-item text-center rounded" href="">
-<div class="service-icon bg-transparent border rounded mx-auto mb-4 p-1">
-<div class="w-100 h-100 border rounded d-flex align-items-center justify-content-center">
-<i class="fa fa-utensils fa-2x text-primary"></i>
-</div>
-</div>
-<h5 class="mb-3">Food & Restaurant</h5>
-<p class="text-body mb-0">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet lorem.</p>
-</a>
-</div>
-<div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-<a class="service-item text-center rounded" href="">
-<div class="service-icon bg-transparent border rounded mx-auto mb-4 p-1">
-<div class="w-100 h-100 border rounded d-flex align-items-center justify-content-center">
-<i class="fa fa-spa fa-2x text-primary"></i>
-</div>
-</div>
-<h5 class="mb-3">Spa & Fitness</h5>
-<p class="text-body mb-0">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet lorem.</p>
-</a>
-</div>
-<div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.4s">
-<a class="service-item text-center rounded" href="">
-<div class="service-icon bg-transparent border rounded mx-auto mb-4 p-1">
-<div class="w-100 h-100 border rounded d-flex align-items-center justify-content-center">
-<i class="fa fa-swimmer fa-2x text-primary"></i>
-</div>
-</div>
-<h5 class="mb-3">Sports & Gaming</h5>
-<p class="text-body mb-0">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet lorem.</p>
-</a>
-</div>
-<div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-<a class="service-item text-center rounded" href="">
-<div class="service-icon bg-transparent border rounded mx-auto mb-4 p-1">
-<div class="w-100 h-100 border rounded d-flex align-items-center justify-content-center">
-<i class="fa fa-glass-cheers fa-2x text-primary"></i>
-</div>
-</div>
-<h5 class="mb-3">Event & Party</h5>
-<p class="text-body mb-0">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet lorem.</p>
-</a>
-</div>
-<div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.6s">
-<a class="service-item text-center rounded" href="">
-<div class="service-icon bg-transparent border rounded mx-auto mb-4 p-1">
- <div class="w-100 h-100 border rounded d-flex align-items-center justify-content-center">
-<i class="fa fa-dumbbell fa-2x text-primary"></i>
-</div>
-</div>
-<h5 class="mb-3">GYM & Yoga</h5>
-<p class="text-body mb-0">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet lorem.</p>
-</a>
-</div>
-</div>
-</div>
-</div>
+
+
 
 
 <div class="container-xxl testimonial my-5 py-5 bg-dark wow fadeIn" data-wow-delay="0.1s">
@@ -499,154 +425,9 @@
 </div>
 
 
-<div class="container-xxl py-5">
-<div class="container">
-<div class="text-center wow fadeInUp" data-wow-delay="0.1s">
-<h6 class="section-title text-center text-primary text-uppercase">Our Team</h6>
-<h1 class="mb-5">Explore Our <span class="text-primary text-uppercase">Staffs</span></h1>
-</div>
- <div class="row g-4">
-<div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-<div class="team-item rounded">
-<div class="position-relative">
-<img class="img-fluid" src="img/team-1.jpg" alt="">
-<div class="position-absolute start-50 top-100 translate-middle d-flex align-items-center">
-<a class="btn btn-square btn-primary mx-1" href=""><i class="fab fa-facebook-f"></i></a>
-<a class="btn btn-square btn-primary mx-1" href=""><i class="fab fa-twitter"></i></a>
-<a class="btn btn-square btn-primary mx-1" href=""><i class="fab fa-instagram"></i></a>
-</div>
-</div>
-<div class="text-center p-4 mt-3">
-<h5 class="fw-bold mb-0">Full Name</h5>
-<small>Designation</small>
-</div>
-</div>
-</div>
-<div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-<div class="team-item rounded">
-<div class="position-relative">
-<img class="img-fluid" src="img/team-2.jpg" alt="">
-<div class="position-absolute start-50 top-100 translate-middle d-flex align-items-center">
-<a class="btn btn-square btn-primary mx-1" href=""><i class="fab fa-facebook-f"></i></a>
-<a class="btn btn-square btn-primary mx-1" href=""><i class="fab fa-twitter"></i></a>
-<a class="btn btn-square btn-primary mx-1" href=""><i class="fab fa-instagram"></i></a>
-</div>
-</div>
-<div class="text-center p-4 mt-3">
-<h5 class="fw-bold mb-0">Full Name</h5>
-<small>Designation</small>
-</div>
-</div>
-</div>
-<div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-<div class="team-item rounded">
-<div class="position-relative">
-<img class="img-fluid" src="img/team-3.jpg" alt="">
-<div class="position-absolute start-50 top-100 translate-middle d-flex align-items-center">
-<a class="btn btn-square btn-primary mx-1" href=""><i class="fab fa-facebook-f"></i></a>
-<a class="btn btn-square btn-primary mx-1" href=""><i class="fab fa-twitter"></i></a>
-<a class="btn btn-square btn-primary mx-1" href=""><i class="fab fa-instagram"></i></a>
-</div>
-</div>
-<div class="text-center p-4 mt-3">
-<h5 class="fw-bold mb-0">Full Name</h5>
-<small>Designation</small>
-</div>
-</div>
-</div>
-<div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
-<div class="team-item rounded">
-<div class="position-relative">
-<img class="img-fluid" src="img/team-4.jpg" alt="">
-<div class="position-absolute start-50 top-100 translate-middle d-flex align-items-center">
-<a class="btn btn-square btn-primary mx-1" href=""><i class="fab fa-facebook-f"></i></a>
-<a class="btn btn-square btn-primary mx-1" href=""><i class="fab fa-twitter"></i></a>
-<a class="btn btn-square btn-primary mx-1" href=""><i class="fab fa-instagram"></i></a>
-</div>
-</div>
-<div class="text-center p-4 mt-3">
-<h5 class="fw-bold mb-0">Full Name</h5>
-<small>Designation</small>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
 
 
-<div class="container-xxl py-5">
-<div class="container">
-<div class="text-center wow fadeInUp" data-wow-delay="0.1s">
-<h6 class="section-title text-center text-primary text-uppercase">Blog Post</h6>
-<h1 class="mb-5">Latest From <span class="text-primary text-uppercase">Blog</span></h1>
-</div>
-<div class="row g-4">
-<div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-<div class="blog-item rounded">
-<div class="overflow-hidden">
-<img class="img-fluid" src="img/blog-1.jpg" alt="">
-</div>
-<div class="p-4">
-<div class="d-flex mx-n2 mb-3">
-<small class="mx-2"><i class="fa fa-user-alt text-primary me-2"></i>John Doe</small>
-<small class="mx-2"><i class="fa fa-calendar-alt text-primary me-2"></i>01 Jan 2045</small>
-</div>
-<h5 class="lh-base mb-3">Diam rebum diam clita rebum lorem ipsum sed elitr diam sed clita amet</h5>
-<a href="" class="fw-medium text-uppercase">Read More <i class="bi bi-arrow-right"></i></a>
-</div>
-</div>
-</div>
-<div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-<div class="blog-item rounded">
-<div class="overflow-hidden">
-<img class="img-fluid" src="img/blog-2.jpg" alt="">
-</div>
-<div class="p-4">
-<div class="d-flex mx-n2 mb-3">
-<small class="mx-2"><i class="fa fa-user-alt text-primary me-2"></i>John Doe</small>
-<small class="mx-2"><i class="fa fa-calendar-alt text-primary me-2"></i>01 Jan 2045</small>
-</div>
-<h5 class="lh-base mb-3">Diam rebum diam clita rebum lorem ipsum sed elitr diam sed clita amet</h5>
-<a href="" class="fw-medium text-uppercase">Read More <i class="bi bi-arrow-right"></i></a>
-</div>
-</div>
-</div>
-<div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-<div class="blog-item rounded">
-<div class="overflow-hidden">
-<img class="img-fluid" src="img/blog-3.jpg" alt="">
-</div>
-<div class="p-4">
-<div class="d-flex mx-n2 mb-3">
-<small class="mx-2"><i class="fa fa-user-alt text-primary me-2"></i>John Doe</small>
-<small class="mx-2"><i class="fa fa-calendar-alt text-primary me-2"></i>01 Jan 2045</small>
-</div>
-<h5 class="lh-base mb-3">Diam rebum diam clita rebum lorem ipsum sed elitr diam sed clita amet</h5>
-<a href="" class="fw-medium text-uppercase">Read More <i class="bi bi-arrow-right"></i></a>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
 
-
-<div class="container newsletter mt-5 wow fadeIn" data-wow-delay="0.1s">
-<div class="row justify-content-center">
-<div class="col-lg-10 border rounded p-1">
-<div class="border rounded text-center p-1">
-<div class="bg-white rounded text-center p-5">
-<h4 class="mb-4">Subscribe Our <span class="text-primary text-uppercase">Newsletter</span></h4>
-<div class="position-relative mx-auto" style="max-width: 400px;">
-<input class="form-control w-100 py-3 ps-4 pe-5" type="text" placeholder="Enter your email">
-<button type="button" class="btn btn-primary py-2 px-3 position-absolute top-0 end-0 mt-2 me-2">Submit</button>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
 
 
 <div class="container-fluid bg-dark text-light footer wow fadeIn" data-wow-delay="0.1s">
