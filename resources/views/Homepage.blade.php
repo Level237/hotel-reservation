@@ -48,49 +48,13 @@
 </button>
 <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
 <div class="navbar-nav mr-auto py-0">
-<div class="nav-item dropdown">
-<a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Home</a>
-<div class="dropdown-menu fade-up rounded-0 m-0">
-<a href="home-1.html" class="dropdown-item">Home 1</a>
-<a href="home-2.html" class="dropdown-item">Home 2</a>
-</div>
-</div>
-<div class="nav-item dropdown">
-<a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">About</a>
-<div class="dropdown-menu fade-down rounded-0 m-0">
-<a href="about-1.html" class="dropdown-item">About 1</a>
-<a href="about-2.html" class="dropdown-item">About 2</a>
-</div>
-</div>
-<div class="nav-item dropdown">
-<a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Rooms</a>
-<div class="dropdown-menu fade-up rounded-0 m-0">
-<a href="room-grid.html" class="dropdown-item">Room Grid</a>
-<a href="room-list.html" class="dropdown-item">Room List</a>
-<a href="room-detail.html" class="dropdown-item">Room Detail</a>
-</div>
-</div>
-<div class="nav-item dropdown">
-<a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
-<div class="dropdown-menu fade-down rounded-0 m-0">
-<a href="service-1.html" class="dropdown-item">Service 1</a>
-<a href="service-2.html" class="dropdown-item">Service 2</a>
-<a href="service-detail.html" class="dropdown-item">Service Detail</a>
-<a href="blog-grid.html" class="dropdown-item">Blog Grid</a>
-<a href="blog-list.html" class="dropdown-item">Blog List</a>
-<a href="blog-detail.html" class="dropdown-item">Blog Detail</a>
-<a href="faq.html" class="dropdown-item">FAQs</a>
-<a href="gallery.html" class="dropdown-item">Gallery</a>
-<a href="contact.html" class="dropdown-item">Contact Us</a>
-<a href="booking-1.html" class="dropdown-item">Booking 1</a>
-<a href="booking-2.html" class="dropdown-item">Booking 2</a>
-<a href="team.html" class="dropdown-item">Our Team</a>
-<a href="testimonial-1.html" class="dropdown-item">Testimonial 1</a>
-<a href="testimonial-2.html" class="dropdown-item">Testimonial 2</a>
-<a href="404.html" class="dropdown-item">404</a>
-</div>
-</div>
-<a href="element.html" class="nav-item nav-link">Elements</a>
+
+
+
+
+<a href="element.html" class="nav-item nav-link">Reserver Rapidement</a>
+<a href="element.html" class="nav-item nav-link">Connexion</a>
+<a href="element.html" class="nav-item nav-link">Inscription</a>
 </div>
 
 </div>
