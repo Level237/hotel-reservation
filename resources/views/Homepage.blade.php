@@ -53,8 +53,8 @@
 
 
 <a href="element.html" class="nav-item nav-link">Reserver Rapidement</a>
-<a href="element.html" class="nav-item nav-link">Connexion</a>
-<a href="element.html" class="nav-item nav-link">Inscription</a>
+<a href="{{ route('login') }}" class="nav-item nav-link">Connexion</a>
+<a href="{{ route('register') }}" class="nav-item nav-link">Inscription</a>
 </div>
 
 </div>
