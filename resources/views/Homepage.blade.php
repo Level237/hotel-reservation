@@ -131,10 +131,10 @@
 					<li class="nav-item"> <a class="nav-link active" href="index.html-1.htm"><i class="fa-solid fa-hotel me-2"></i>Hotel</a>	</li>
 
 					<!-- Nav item Flight -->
-					<li class="nav-item"> <a class="nav-link" href="index-flight.html.htm"><i class="fa-solid fa-sign-in me-2"></i>S'enregistrer</a>	</li>
+					<li class="nav-item"> <a class="nav-link" href="{{ route('register') }}"><i class="fa-solid fa-sign-in me-2"></i>S'enregistrer</a>	</li>
 
 					<!-- Nav item Tour -->
-					<li class="nav-item"> <a class="nav-link" href="index-tour.html.htm"><i class="fa-solid fa-sign-out me-2"></i>Connexion</a> </li>
+					<li class="nav-item"> <a class="nav-link" href="{{ route('login') }}"><i class="fa-solid fa-sign-out me-2"></i>Connexion</a> </li>
 
 					<!-- Nav item Cabs -->
 					<li class="nav-item"> <a class="nav-link" href="index-cab.html.htm"><i class="fa-solid fa-car me-2"></i>Reserver Rapidement</a></li>
