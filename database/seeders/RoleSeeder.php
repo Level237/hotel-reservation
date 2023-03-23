@@ -21,6 +21,12 @@ class RoleSeeder extends Seeder
 
     Role::create([
         'id'=>2,
+        'type'=>'admin-hotel'
+    ],
+    );
+
+    Role::create([
+        'id'=>3,
         'type'=>'client'
     ],
     );

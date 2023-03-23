@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>Booking - Multipurpose Online Booking Theme</title>
+	<title>Reserver Vos Hotels Rapidement</title>
 
 	<!-- Meta Tags -->
 	<meta charset="utf-8">
@@ -121,219 +121,7 @@
 			</button>
 
 			<!-- Main navbar START -->
-			<div class="navbar-collapse collapse" id="navbarCollapse">
-				<ul class="navbar-nav navbar-nav-scroll me-auto">
-
-					<!-- Nav item Listing -->
-					<li class="nav-item dropdown">
-						<a class="nav-link dropdown-toggle" href="#" id="listingMenu" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Listings</a>
-						<ul class="dropdown-menu" aria-labelledby="listingMenu">
-							<!-- Dropdown submenu -->
-							<li class="dropdown-submenu dropend">
-								<a class="dropdown-item dropdown-toggle" href="#">Hotel</a>
-								<ul class="dropdown-menu" data-bs-popper="none">
-									<li> <a class="dropdown-item" href="index.html-1.htm">Hotel Home</a></li>
-									<li> <a class="dropdown-item" href="index-hotel-chain.html.htm">Hotel Chain</a></li>
-									<li> <a class="dropdown-item" href="index-resort.html.htm">Hotel Resort</a></li>
-									<li> <a class="dropdown-item" href="hotel-grid.html.htm">Hotel Grid</a></li>
-									<li> <a class="dropdown-item" href="hotel-list.html.htm">Hotel List</a></li>
-									<li> <a class="dropdown-item" href="hotel-detail.html.htm">Hotel Detail</a></li>
-									<li> <a class="dropdown-item" href="room-detail.html.htm">Room Detail</a></li>
-									<li> <a class="dropdown-item" href="hotel-booking.html.htm">Hotel Booking</a></li>
-								</ul>
-							</li>
-
-							<!-- Dropdown submenu -->
-							<li class="dropdown-submenu dropend">
-								<a class="dropdown-item dropdown-toggle" href="#">Flight</a>
-								<ul class="dropdown-menu" data-bs-popper="none">
-									<li> <a class="dropdown-item" href="index-flight.html.htm">Flight Home</a></li>
-									<li> <a class="dropdown-item" href="flight-list.html.htm">Flight List</a></li>
-									<li> <a class="dropdown-item" href="flight-detail.html.htm">Flight Detail</a></li>
-									<li> <a class="dropdown-item" href="flight-booking.html.htm">Flight Booking</a></li>
-								</ul>
-							</li>
-
-							<!-- Dropdown submenu -->
-							<li class="dropdown-submenu dropend">
-								<a class="dropdown-item dropdown-toggle" href="#">Tour</a>
-								<ul class="dropdown-menu" data-bs-popper="none">
-									<li> <a class="dropdown-item" href="index-tour.html.htm">Tour Home</a></li>
-									<li> <a class="dropdown-item" href="tour-grid.html.htm">Tour Grid</a></li>
-									<li> <a class="dropdown-item" href="tour-detail.html.htm">Tour Detail</a></li>
-									<li> <a class="dropdown-item" href="tour-booking.html.htm">Tour Booking</a></li>
-								</ul>
-							</li>
-
-							<!-- Dropdown submenu -->
-							<li class="dropdown-submenu dropend">
-								<a class="dropdown-item dropdown-toggle" href="#">Cab</a>
-								<ul class="dropdown-menu" data-bs-popper="none">
-									<li> <a class="dropdown-item" href="index-cab.html.htm">Cab Home</a></li>
-									<li> <a class="dropdown-item" href="cab-list.html.htm">Cab List</a></li>
-									<li> <a class="dropdown-item" href="cab-detail.html.htm">Cab Detail</a></li>
-									<li> <a class="dropdown-item" href="cab-booking.html.htm">Cab Booking</a></li>
-								</ul>
-							</li>
-
-							<!-- Dropdown submenu -->
-							<li class="dropdown-submenu dropend">
-								<a class="dropdown-item dropdown-toggle" href="#">Directory</a>
-								<ul class="dropdown-menu" data-bs-popper="none">
-									<li> <a class="dropdown-item" href="index-directory.html.htm">Directory Home</a></li>
-									<li> <a class="dropdown-item" href="directory-detail.html.htm">Directory Detail</a></li>
-								</ul>
-							</li>
-
-							<!-- Dropdown submenu -->
-							<li class="dropdown-submenu dropend">
-								<a class="dropdown-item dropdown-toggle" href="#">Add Listing</a>
-								<ul class="dropdown-menu" data-bs-popper="none">
-									<li> <a class="dropdown-item" href="join-us.html.htm">Join us</a></li>
-									<li> <a class="dropdown-item" href="add-listing.html.htm">Add Listing</a></li>
-									<li> <a class="dropdown-item" href="add-listing-minimal.html.htm">Add Listing Minimal</a></li>
-									<li> <a class="dropdown-item" href="listing-added.html.htm">Listing Added</a></li>
-								</ul>
-							</li>
-
-							<!-- Dropdown submenu -->
-							<li class="dropdown-submenu dropend">
-								<a class="dropdown-item dropdown-toggle" href="#">Hero</a>
-								<ul class="dropdown-menu" data-bs-popper="none">
-									<li> <a class="dropdown-item" href="hero-inline-form.html.htm">Hero Inline Form</a></li>
-									<li> <a class="dropdown-item" href="hero-multiple-search.html.htm">Hero Multiple Search</a></li>
-									<li> <a class="dropdown-item" href="hero-image-gallery.html.htm">Hero Image Gallery</a></li>
-									<li> <a class="dropdown-item" href="hero-split.html.htm">Hero Split</a></li>
-								</ul>
-							</li>
-
-							<li> <a class="dropdown-item" href="booking-confirm.html.htm">Booking Confirmed</a></li>
-							<li> <a class="dropdown-item" href="compare-listing.html.htm">Compare Listing</a></li>
-							<li> <a class="dropdown-item" href="offer-detail.html.htm">Offer Detail</a></li>
-						</ul>
-					</li>
-
-					<!-- Nav item Pages -->
-					<li class="nav-item dropdown">
-						<a class="nav-link dropdown-toggle" href="#" id="pagesMenu" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Pages</a>
-						<ul class="dropdown-menu" aria-labelledby="pagesMenu">
-
-							<li> <a class="dropdown-item" href="about.html.htm">About</a></li>
-							<li> <a class="dropdown-item" href="contact.html.htm">Contact</a></li>
-							<li> <a class="dropdown-item" href="contact-2.html.htm">Contact 2</a></li>
-							<li> <a class="dropdown-item" href="team.html.htm">Our Team</a></li>
-
-							<!-- Dropdown submenu -->
-							<li class="dropdown-submenu dropend">
-								<a class="dropdown-item dropdown-toggle" href="#">Authentication</a>
-								<ul class="dropdown-menu" data-bs-popper="none">
-									<li> <a class="dropdown-item" href="sign-in.html.htm">Sign In</a></li>
-									<li> <a class="dropdown-item" href="sign-up.html.htm">Sign Up</a></li>
-									<li> <a class="dropdown-item" href="forgot-password.html.htm">Forgot Password</a></li>
-									<li> <a class="dropdown-item" href="two-factor-auth.html.htm">Two factor authentication</a></li>
-								</ul>
-							</li>
-
-							<!-- Dropdown submenu -->
-							<li class="dropdown-submenu dropend">
-								<a class="dropdown-item dropdown-toggle" href="#">Blog</a>
-								<ul class="dropdown-menu" data-bs-popper="none">
-									<li> <a class="dropdown-item" href="blog.html.htm">Blog</a></li>
-									<li> <a class="dropdown-item" href="blog-detail.html.htm">Blog Detail</a></li>
-								</ul>
-							</li>
-
-							<!-- Dropdown submenu -->
-							<li class="dropdown-submenu dropend">
-								<a class="dropdown-item dropdown-toggle" href="#">Help</a>
-								<ul class="dropdown-menu" data-bs-popper="none">
-									<li> <a class="dropdown-item" href="help-center.html.htm">Help Center</a></li>
-									<li> <a class="dropdown-item" href="help-detail.html.htm">Help Detail</a></li>
-									<li> <a class="dropdown-item" href="privacy-policy.html.htm">Privacy Policy</a></li>
-									<li> <a class="dropdown-item" href="terms-of-service.html.htm">Terms of Service</a></li>
-								</ul>
-							</li>
-
-							<li> <a class="dropdown-item" href="pricing.html.htm">Pricing</a></li>
-							<li> <a class="dropdown-item" href="faq.html.htm">FAQs</a></li>
-							<li> <a class="dropdown-item" href="error.html.htm">Error 404</a></li>
-							<li> <a class="dropdown-item" href="coming-soon.html.htm">Coming Soon</a></li>
-						</ul>
-					</li>
-
-					<!-- Nav item Account -->
-					<li class="nav-item dropdown">
-						<a class="nav-link dropdown-toggle" href="#" id="accounntMenu" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Accounts</a>
-						<ul class="dropdown-menu" aria-labelledby="accounntMenu">
-							<!-- Dropdown submenu -->
-							<li class="dropdown-submenu dropend">
-								<a class="dropdown-item dropdown-toggle" href="#">User Profile</a>
-								<ul class="dropdown-menu" data-bs-popper="none">
-									<li> <a class="dropdown-item" href="account-profile.html.htm">My Profile</a> </li>
-									<li> <a class="dropdown-item" href="account-bookings.html.htm">My Bookings</a> </li>
-									<li> <a class="dropdown-item" href="account-travelers.html.htm">Travelers</a> </li>
-									<li> <a class="dropdown-item" href="account-payment-details.html.htm">Payment Details</a> </li>
-									<li> <a class="dropdown-item" href="account-wishlist.html.htm">Wishlist</a> </li>
-									<li> <a class="dropdown-item" href="account-settings.html.htm">Settings</a> </li>
-									<li> <a class="dropdown-item" href="account-delete.html.htm">Delete Profile</a> </li>
-								</ul>
-							</li>
-
-							<!-- Dropdown submenu -->
-							<li class="dropdown-submenu dropend">
-								<a class="dropdown-item dropdown-toggle" href="#">Agent Dashboard</a>
-								<ul class="dropdown-menu" data-bs-popper="none">
-									<li> <a class="dropdown-item" href="agent-dashboard.html.htm">Dashboard</a> </li>
-									<li> <a class="dropdown-item" href="agent-listings.html.htm">Listings</a> </li>
-									<li> <a class="dropdown-item" href="agent-bookings.html.htm">Bookings</a> </li>
-									<li> <a class="dropdown-item" href="agent-activities.html.htm">Activities</a> </li>
-									<li> <a class="dropdown-item" href="agent-earnings.html.htm">Earnings</a> </li>
-									<li> <a class="dropdown-item" href="agent-reviews.html.htm">Reviews</a> </li>
-									<li> <a class="dropdown-item" href="agent-settings.html.htm">Settings</a> </li>
-								</ul>
-							</li>
-							
-							<li> <a class="dropdown-item" href="admin-dashboard.html.htm">Master Admin</a> </li>
-						</ul>
-					</li>
-
-          <!-- Nav item link-->
-					<li class="nav-item dropdown">
-						<a class="nav-link" href="#" id="advanceMenu" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-							<i class="fas fa-ellipsis-h"></i>
-						</a>
-						<ul class="dropdown-menu min-w-auto" data-bs-popper="none">
-							<li> 
-								<a class="dropdown-item" href="https://support.webestica.com/" target="_blank">
-									<i class="text-warning fa-fw bi bi-life-preserver me-2"></i>Support
-								</a> 
-							</li>
-							<li> 
-								<a class="dropdown-item" href="docs/index.html.htm" target="_blank">
-									<i class="text-danger fa-fw bi bi-card-text me-2"></i>Documentation
-								</a> 
-							</li>
-							<li> <hr class="dropdown-divider"></li>
-							<li> 
-								<a class="dropdown-item" href="rtl/index.htm" target="_blank">
-									<i class="text-info fa-fw bi bi-toggle-off me-2"></i>RTL demo
-								</a> 
-							</li>
-							<li> 
-								<a class="dropdown-item" href="https://themes.getbootstrap.com/store/webestica/" target="_blank">
-									<i class="text-success fa-fw bi bi-cloud-download-fill me-2"></i>Buy Booking!
-								</a> 
-							</li>
-							<li> <hr class="dropdown-divider"></li>
-							<li> 
-								<a class="dropdown-item" href="docs/alerts.html.htm" target="_blank">
-									<i class="text-orange fa-fw bi bi-puzzle-fill me-2"></i>Components
-								</a> 
-							</li>
-						</ul>
-					</li>
-				</ul>
-			</div>
+			
 			<!-- Main navbar END -->
 
 			<!-- Nav category menu START -->
@@ -343,13 +131,13 @@
 					<li class="nav-item"> <a class="nav-link active" href="index.html-1.htm"><i class="fa-solid fa-hotel me-2"></i>Hotel</a>	</li>
 
 					<!-- Nav item Flight -->
-					<li class="nav-item"> <a class="nav-link" href="index-flight.html.htm"><i class="fa-solid fa-plane me-2"></i>Flight</a>	</li>
+					<li class="nav-item"> <a class="nav-link" href="index-flight.html.htm"><i class="fa-solid fa-sign-in me-2"></i>S'enregistrer</a>	</li>
 
 					<!-- Nav item Tour -->
-					<li class="nav-item"> <a class="nav-link" href="index-tour.html.htm"><i class="fa-solid fa-globe-americas me-2"></i>Tour</a> </li>
+					<li class="nav-item"> <a class="nav-link" href="index-tour.html.htm"><i class="fa-solid fa-sign-out me-2"></i>Connexion</a> </li>
 
 					<!-- Nav item Cabs -->
-					<li class="nav-item"> <a class="nav-link" href="index-cab.html.htm"><i class="fa-solid fa-car me-2"></i>Cab</a></li>
+					<li class="nav-item"> <a class="nav-link" href="index-cab.html.htm"><i class="fa-solid fa-car me-2"></i>Reserver Rapidement</a></li>
 				</ul>
 			</div>
 			<!-- Nav category menu END -->
@@ -488,8 +276,8 @@ Main Banner START -->
 				<!-- Content -->
 				<div class="col-lg-6 position-relative mb-4 mb-md-0">
 					<!-- Title -->
-					<h1 class="mb-4 mt-md-5 display-5">Find the top
-						<span class="position-relative z-index-9">Hotels nearby.
+					<h1 class="mb-4 mt-md-5 display-5">Trouvez et Reserver 
+						<span class="position-relative z-index-9">les meilleurs hôtels à proximité.
 							<!-- SVG START -->
 							<span class="position-absolute top-50 start-50 translate-middle z-index-n1 d-none d-md-block mt-4">
 								<svg width="390.5px" height="21.5px" viewbox="0 0 445.5 21.5">
@@ -500,26 +288,14 @@ Main Banner START -->
 						</span>
 					</h1>
 					<!-- Info -->
-					<p class="mb-4">We bring you not only a stay option, but an experience in your budget to enjoy the luxury.</p>
+				
 
 					<!-- Buttons -->
 					<div class="hstack gap-4 flex-wrap align-items-center">
 						<!-- Button -->
-						<a href="#" class="btn btn-primary-soft mb-0">Discover Now</a>
+						<a href="#" class="btn btn-primary-soft mb-0">Découvrir maintenant</a>
 						<!-- Story button -->
-						<a data-glightbox="" data-gallery="office-tour" href="https://www.youtube.com/embed/tXHviS-4ygo" class="d-block">
-							<!-- Avatar -->
-							<div class="avatar avatar-md z-index-1 position-relative me-2">
-								<img class="avatar-img rounded-circle" src="assets/images/avatar/12.jpg" alt="avatar">
-								<!-- Video button -->
-								<div class="btn btn-xs btn-round btn-white shadow-sm position-absolute top-50 start-50 translate-middle z-index-9 mb-0"> 
-									<i class="fas fa-play"></i>
-								</div>
-							</div>
-							<div class="align-middle d-inline-block">
-								<h6 class="fw-normal small mb-0">Watch our story</h6>
-							</div>
-						</a>
+						
 					</div>
 				</div>
 				
@@ -555,7 +331,7 @@ Main Banner START -->
 							<!-- Title -->
 							<i class="bi bi-headset text-danger fs-3"></i>
 							<h5 class="text-dark mb-1">24 / 7</h5>
-							<h6 class="text-dark fw-light small mb-0">Guide Supports</h6>
+							<h6 class="text-dark fw-light small mb-0">Support Client</h6>
 						</div>
 					</div>
 
@@ -572,7 +348,7 @@ Main Banner START -->
 		<div class="row">
 			<div class="col-xl-10 position-relative mt-n3 mt-xl-n9">
 				<!-- Title -->
-				<h6 class="d-none d-xl-block mb-3">Check Availability</h6>
+				<h6 class="d-none d-xl-block mb-3">Vérifier la disponibilité</h6>
 
 				<!-- Booking from START -->
 				<form class="card shadow rounded-3 position-relative p-4 pe-md-5 pb-5 pb-md-4">
@@ -1075,34 +851,34 @@ About START -->
 
 			<!-- Right side START -->
 			<div class="col-lg-6">
-				<h2 class="mb-3 mb-lg-5">The Best Holidays Start Here!</h2>
-				<p class="mb-3 mb-lg-5">Book your hotel with us and don't forget to grab an awesome hotel deal to save massive on your stay.</p>
+				<h2 class="mb-3 mb-lg-5">Les meilleures vacances commencent ici !</h2>
+				<p class="mb-3 mb-lg-5">Réservez votre hôtel avec nous et n'oubliez pas de profiter d'une offre exceptionnelle pour économiser massivement sur votre séjour.</p>
 
 				<!-- Features START -->
 				<div class="row g-4">
 					<!-- Item -->
 					<div class="col-sm-6">
 						<div class="icon-lg bg-success bg-opacity-10 text-success rounded-circle"><i class="fa-solid fa-utensils"></i></div>
-						<h5 class="mt-2">Quality Food</h5>
-						<p class="mb-0">Departure defective arranging rapturous did. Conduct denied adding worthy little.</p>
+						<h5 class="mt-2">Aliments de qualité</h5>
+						
 					</div>
 					<!-- Item -->
 					<div class="col-sm-6">
 						<div class="icon-lg bg-danger bg-opacity-10 text-danger rounded-circle"><i class="bi bi-stopwatch-fill"></i></div>
-						<h5 class="mt-2">Quick Services</h5>
-						<p class="mb-0">Supposing so be resolving breakfast am or perfectly. </p>
+						<h5 class="mt-2">Service Rapide</h5>
+						
 					</div>
 					<!-- Item -->
 					<div class="col-sm-6">
 						<div class="icon-lg bg-orange bg-opacity-10 text-orange rounded-circle"><i class="bi bi-shield-fill-check"></i></div>
-						<h5 class="mt-2">High Security</h5>
-						<p class="mb-0">Arranging rapturous did believe him all had supported. </p>
+						<h5 class="mt-2">Grande Sécurité</h5>
+						
 					</div>
 					<!-- Item -->
 					<div class="col-sm-6">
 						<div class="icon-lg bg-info bg-opacity-10 text-info rounded-circle"><i class="bi bi-lightning-fill"></i></div>
-						<h5 class="mt-2">24 Hours Alert</h5>
-						<p class="mb-0">Rapturous did believe him all had supported.</p>
+						<h5 class="mt-2">Disponibilité</h5>
+						
 					</div>		
 				</div>
 				<!-- Features END -->
@@ -1123,7 +899,7 @@ Featured Hotels START -->
 		<!-- Title -->
 		<div class="row mb-4">
 			<div class="col-12 text-center">
-				<h2 class="mb-0">Featured Hotels</h2>
+				<h2 class="mb-0">Hôtels en vedette</h2>
 			</div>
 		</div>
 
@@ -1138,18 +914,18 @@ Featured Hotels START -->
 						<img src="assets/images/category/hotel/01.jpg" class="card-img" alt="hotel image">
 						<!-- Badge -->
 						<div class="position-absolute bottom-0 start-0 p-3">
-							<div class="badge text-bg-dark fs-6 rounded-pill stretched-link"><i class="bi bi-geo-alt me-2"></i>New York</div>
+							<div class="badge text-bg-dark fs-6 rounded-pill stretched-link"><i class="bi bi-geo-alt me-2"></i>Douala</div>
 						</div>
 					</div>
 
 					<!-- Card body -->
 					<div class="card-body px-2">
 						<!-- Title -->
-						<h5 class="card-title"><a href="hotel-detail.html.htm" class="stretched-link">Baga Comfort</a></h5>
+						<h5 class="card-title"><a href="hotel-detail.html.htm" class="stretched-link">Akwa Palace</a></h5>
 						<!-- Price and rating -->
 						<div class="d-flex justify-content-between align-items-center">
 							<h6 class="text-success mb-0">$455 <small class="fw-light">/starting at</small> </h6>
-							<h6 class="mb-0">4.5<i class="fa-solid fa-star text-warning ms-1"></i></h6>
+							<h6 class="mb-0">4<i class="fa-solid fa-star text-warning ms-1"></i></h6>
 						</div>
 					</div>
 				</div>
@@ -1166,18 +942,18 @@ Featured Hotels START -->
 						<img src="assets/images/category/hotel/02.jpg" class="card-img" alt="hotel image">
 						<!-- Badge -->
 						<div class="position-absolute bottom-0 start-0 p-3">
-							<div class="badge text-bg-dark fs-6 rounded-pill stretched-link"><i class="bi bi-geo-alt me-2"></i>California</div>
+							<div class="badge text-bg-dark fs-6 rounded-pill stretched-link"><i class="bi bi-geo-alt me-2"></i>Douala</div>
 						</div>
 					</div>
 
 					<!-- Card body -->
 					<div class="card-body px-2">
 						<!-- Title -->
-						<h5 class="card-title"><a href="hotel-detail.html.htm" class="stretched-link">New Apollo Hotel</a></h5>
+						<h5 class="card-title"><a href="hotel-detail.html.htm" class="stretched-link">Hotel la falaise</a></h5>
 						<!-- Price and rating -->
 						<div class="d-flex justify-content-between align-items-center">
 							<h6 class="text-success mb-0">$585 <small class="fw-light">/starting at</small> </h6>
-							<h6 class="mb-0">4.8<i class="fa-solid fa-star text-warning ms-1"></i></h6>
+							<h6 class="mb-0">5<i class="fa-solid fa-star text-warning ms-1"></i></h6>
 						</div>
 					</div>
 				</div>
@@ -1194,18 +970,18 @@ Featured Hotels START -->
 						<img src="assets/images/category/hotel/03.jpg" class="card-img" alt="hotel image">
 						<!-- Badge -->
 						<div class="position-absolute bottom-0 start-0 p-3">
-							<div class="badge text-bg-dark fs-6 rounded-pill stretched-link"><i class="bi bi-geo-alt me-2"></i>Los Angeles</div>
+							<div class="badge text-bg-dark fs-6 rounded-pill stretched-link"><i class="bi bi-geo-alt me-2"></i>Yaoundé</div>
 						</div>
 					</div>
 
 					<!-- Card body -->
 					<div class="card-body px-2">
 						<!-- Title -->
-						<h5 class="card-title"><a href="hotel-detail.html.htm" class="stretched-link">New Age Hotel</a></h5>
+						<h5 class="card-title"><a href="hotel-detail.html.htm" class="stretched-link">La falaise de yaounde</a></h5>
 						<!-- Price and rating -->
 						<div class="d-flex justify-content-between align-items-center">
 							<h6 class="text-success mb-0">$385 <small class="fw-light">/starting at</small> </h6>
-							<h6 class="mb-0">4.6<i class="fa-solid fa-star text-warning ms-1"></i></h6>
+							<h6 class="mb-0">5<i class="fa-solid fa-star text-warning ms-1"></i></h6>
 						</div>
 					</div>
 				</div>
@@ -1222,18 +998,18 @@ Featured Hotels START -->
 						<img src="assets/images/category/hotel/04.jpg" class="card-img" alt="hotel image">
 						<!-- Badge -->
 						<div class="position-absolute bottom-0 start-0 p-3">
-							<div class="badge text-bg-dark fs-6 rounded-pill stretched-link"><i class="bi bi-geo-alt me-2"></i>Chicago</div>
+							<div class="badge text-bg-dark fs-6 rounded-pill stretched-link"><i class="bi bi-geo-alt me-2"></i>Yaoundé</div>
 						</div>
 					</div>
 
 					<!-- Card body -->
 					<div class="card-body px-2">
 						<!-- Title -->
-						<h5 class="card-title"><a href="hotel-detail.html.htm" class="stretched-link">Helios Beach Resort</a></h5>
+						<h5 class="card-title"><a href="hotel-detail.html.htm" class="stretched-link">Hilton Hotel</a></h5>
 						<!-- Price and rating -->
 						<div class="d-flex justify-content-between align-items-center">
 							<h6 class="text-success mb-0">$665 <small class="fw-light">/starting at</small> </h6>
-							<h6 class="mb-0">4.8<i class="fa-solid fa-star text-warning ms-1"></i></h6>
+							<h6 class="mb-0">5<i class="fa-solid fa-star text-warning ms-1"></i></h6>
 						</div>
 					</div>
 				</div>
@@ -1247,36 +1023,7 @@ Featured Hotels END -->
 
 <!-- =======================
 Client START -->
-<section class="py-0 py-md-5">
-	<div class="container">
-		<div class="row g-4 g-lg-7 justify-content-center align-items-center">
-			<!-- Image -->
-			<div class="col-5 col-sm-3 col-xl-2">
-				<img src="assets/images/client/01.svg" class="grayscale" alt="">
-			</div>
-			<!-- Image -->
-			<div class="col-5 col-sm-3 col-xl-2">
-				<img src="assets/images/client/02.svg" class="grayscale" alt="">
-			</div>
-			<!-- Image -->
-			<div class="col-5 col-sm-3 col-xl-2">
-				<img src="assets/images/client/03.svg" class="grayscale" alt="">
-			</div>
-			<!-- Image -->
-			<div class="col-5 col-sm-3 col-xl-2">
-				<img src="assets/images/client/04.svg" class="grayscale" alt="">
-			</div>
-			<!-- Image -->
-			<div class="col-5 col-sm-3 col-xl-2">
-				<img src="assets/images/client/05.svg" class="grayscale" alt="">
-			</div>
-			<!-- Image -->
-			<div class="col-5 col-sm-3 col-xl-2">
-				<img src="assets/images/client/06.svg" class="grayscale" alt="">
-			</div>
-		</div>
-	</div>
-</section>
+
 <!-- =======================
 Client END -->
 
@@ -1388,186 +1135,7 @@ Testimonials END -->
 
 <!-- =======================
 Near by START -->
-<section>
-	<div class="container">
-		<!-- Title -->
-		<div class="row mb-4">
-			<div class="col-12 text-center">
-				<h2 class="mb-0">Explore Nearby</h2>
-			</div>
-		</div>
 
-		<div class="row g-4 g-md-5">
-			<!-- Card item START -->
-			<div class="col-6 col-sm-4 col-lg-3 col-xl-2">
-				<div class="card bg-transparent text-center p-1 h-100">
-					<!-- Image -->
-					<img src="assets/images/category/hotel/nearby/01.jpg" class="rounded-circle" alt="">
-
-					<div class="card-body p-0 pt-3">
-						<h5 class="card-title"><a href="#" class="stretched-link">San Francisco</a></h5>
-						<span>13 min drive</span>
-					</div>
-				</div>
-			</div>
-			<!-- Card item END -->
-
-			<!-- Card item START -->
-			<div class="col-6 col-sm-4 col-lg-3 col-xl-2">
-				<div class="card bg-transparent text-center p-1 h-100">
-					<!-- Image -->
-					<img src="assets/images/category/hotel/nearby/02.jpg" class="rounded-circle" alt="">
-
-					<div class="card-body p-0 pt-3">
-						<h5 class="card-title"><a href="#" class="stretched-link">Los Angeles</a></h5>
-						<span>25 min drive</span>
-					</div>
-				</div>
-			</div>
-			<!-- Card item END -->
-
-			<!-- Card item START -->
-			<div class="col-6 col-sm-4 col-lg-3 col-xl-2">
-				<div class="card bg-transparent text-center p-1 h-100">
-					<!-- Image -->
-					<img src="assets/images/category/hotel/nearby/03.jpg" class="rounded-circle" alt="">
-
-					<div class="card-body p-0 pt-3">
-						<h5 class="card-title"><a href="#" class="stretched-link">Miami</a></h5>
-						<span>45 min drive</span>
-					</div>
-				</div>
-			</div>
-			<!-- Card item END -->
-
-			<!-- Card item START -->
-			<div class="col-6 col-sm-4 col-lg-3 col-xl-2">
-				<div class="card bg-transparent text-center p-1 h-100">
-					<!-- Image -->
-					<img src="assets/images/category/hotel/nearby/04.jpg" class="rounded-circle" alt="">
-
-					<div class="card-body p-0 pt-3">
-						<h5 class="card-title"><a href="#" class="stretched-link">Sanjosh</a></h5>
-						<span>55 min drive</span>
-					</div>
-				</div>
-			</div>
-			<!-- Card item END -->
-
-			<!-- Card item START -->
-			<div class="col-6 col-sm-4 col-lg-3 col-xl-2">
-				<div class="card bg-transparent text-center p-1 h-100">
-					<!-- Image -->
-					<img src="assets/images/category/hotel/nearby/05.jpg" class="rounded-circle" alt="">
-
-					<div class="card-body p-0 pt-3">
-						<h5 class="card-title"><a href="#" class="stretched-link">New York</a></h5>
-						<span>1-hour drive</span>
-					</div>
-				</div>
-			</div>
-			<!-- Card item END -->
-
-			<!-- Card item START -->
-			<div class="col-6 col-sm-4 col-lg-3 col-xl-2">
-				<div class="card bg-transparent text-center p-1 h-100">
-					<!-- Image -->
-					<img src="assets/images/category/hotel/nearby/06.jpg" class="rounded-circle" alt="">
-
-					<div class="card-body p-0 pt-3">
-						<h5 class="card-title"><a href="#" class="stretched-link">North Justen</a></h5>
-						<span>2-hour drive</span>
-					</div>
-				</div>
-			</div>
-			<!-- Card item END -->
-
-			<!-- Card item START -->
-			<div class="col-6 col-sm-4 col-lg-3 col-xl-2">
-				<div class="card bg-transparent text-center p-1 h-100">
-					<!-- Image -->
-					<img src="assets/images/category/hotel/nearby/07.jpg" class="rounded-circle" alt="">
-
-					<div class="card-body p-0 pt-3">
-						<h5 class="card-title"><a href="#" class="stretched-link">Rio</a></h5>
-						<span>20 min drive</span>
-					</div>
-				</div>
-			</div>
-			<!-- Card item END -->
-
-			<!-- Card item START -->
-			<div class="col-6 col-sm-4 col-lg-3 col-xl-2">
-				<div class="card bg-transparent text-center p-1 h-100">
-					<!-- Image -->
-					<img src="assets/images/category/hotel/nearby/08.jpg" class="rounded-circle" alt="">
-
-					<div class="card-body p-0 pt-3">
-						<h5 class="card-title"><a href="#" class="stretched-link">Las Vegas</a></h5>
-						<span>3-hour drive</span>
-					</div>
-				</div>
-			</div>
-			<!-- Card item END -->
-
-			<!-- Card item START -->
-			<div class="col-6 col-sm-4 col-lg-3 col-xl-2">
-				<div class="card bg-transparent text-center p-1 h-100">
-					<!-- Image -->
-					<img src="assets/images/category/hotel/nearby/09.jpg" class="rounded-circle" alt="">
-
-					<div class="card-body p-0 pt-3">
-						<h5 class="card-title"><a href="#" class="stretched-link">Texas</a></h5>
-						<span>55 min drive</span>
-					</div>
-				</div>
-			</div>
-			<!-- Card item END -->
-
-			<!-- Card item START -->
-			<div class="col-6 col-sm-4 col-lg-3 col-xl-2">
-				<div class="card bg-transparent text-center p-1 h-100">
-					<!-- Image -->
-					<img src="assets/images/category/hotel/nearby/10.jpg" class="rounded-circle" alt="">
-
-					<div class="card-body p-0 pt-3">
-						<h5 class="card-title"><a href="#" class="stretched-link">Chicago</a></h5>
-						<span>13 min drive</span>
-					</div>
-				</div>
-			</div>
-			<!-- Card item END -->
-
-			<!-- Card item START -->
-			<div class="col-6 col-sm-4 col-lg-3 col-xl-2">
-				<div class="card bg-transparent text-center p-1 h-100">
-					<!-- Image -->
-					<img src="assets/images/category/hotel/nearby/11.jpg" class="rounded-circle" alt="">
-
-					<div class="card-body p-0 pt-3">
-						<h5 class="card-title"><a href="#" class="stretched-link">New Keagan</a></h5>
-						<span>35 min drive</span>
-					</div>
-				</div>
-			</div>
-			<!-- Card item END -->
-
-			<!-- Card item START -->
-			<div class="col-6 col-sm-4 col-lg-3 col-xl-2">
-				<div class="card bg-transparent text-center p-1 h-100">
-					<!-- Image -->
-					<img src="assets/images/category/hotel/nearby/01.jpg" class="rounded-circle" alt="">
-
-					<div class="card-body p-0 pt-3">
-						<h5 class="card-title"><a href="#" class="stretched-link">Oslo</a></h5>
-						<span>1 hour 13 min drive</span>
-					</div>
-				</div>
-			</div>
-			<!-- Card item END -->
-		</div> <!-- Row END -->
-	</div>
-</section>
 <!-- =======================
 Near by END -->
 
