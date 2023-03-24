@@ -148,10 +148,7 @@ Main Content START -->
 									<div><button type="submit" class="btn btn-primary w-100 mb-0">Connexion</button></div>
 
 									<!-- Divider -->
-									<div class="position-relative my-4">
-										<hr>
-										<p class="small bg-mode position-absolute top-50 start-50 translate-middle px-2">Or sign in with</p>
-									</div>
+
 
 									<!-- Google and facebook button -->
 									<div class="vstack gap-3">
