@@ -116,7 +116,7 @@ class UserSeeder extends Seeder
         User::create([
             'id'=>12,
             'name'=>"Tatchuim christian",
-            'email'=>"FrancoHotel46@gmail.com",
+            'email'=>"SafyadHotel46@gmail.com",
             'role_id'=>2,
             'password'=>bcrypt('password'),
         ],
@@ -125,7 +125,7 @@ class UserSeeder extends Seeder
         User::create([
             'id'=>13,
             'name'=>"louis michel",
-            'email'=>"HiltonHotel65@gmail.com",
+            'email'=>"FrancoHotel@gmail.com",
             'role_id'=>2,
             'password'=>bcrypt('password'),
         ],
@@ -134,7 +134,7 @@ class UserSeeder extends Seeder
         User::create([
             'id'=>14,
             'name'=>"Mbida roland",
-            'email'=>"HotelBs34@gmail.com",
+            'email'=>"HiltonHotel38@gmail.com",
             'role_id'=>2,
             'password'=>bcrypt('password'),
         ],
@@ -143,7 +143,7 @@ class UserSeeder extends Seeder
         User::create([
             'id'=>15,
             'name'=>"Massao edouard",
-            'email'=>"HotelBs34@gmail.com",
+            'email'=>"BounsHotel@gmail.com",
             'role_id'=>2,
             'password'=>bcrypt('password'),
         ],
@@ -151,8 +151,8 @@ class UserSeeder extends Seeder
 
         User::create([
             'id'=>16,
-            'name'=>"Safya esther",
-            'email'=>"SafyadHotel@gmail.com",
+            'name'=>"Massao Gerard",
+            'email'=>"MassaoHotel@gmail.com",
             'role_id'=>2,
             'password'=>bcrypt('password'),
         ],
