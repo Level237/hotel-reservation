@@ -12,7 +12,7 @@ return new class extends Migration
      * Run the migrations.
      */
     public function up(): void
-    {   
+    {
         Schema::disableForeignKeyConstraints();
         Schema::create('reservations', function (Blueprint $table) {
             $table->id();
@@ -23,9 +23,11 @@ return new class extends Migration
             ->restrictOnUpdate()
             ->restrictOnDelete();
 
-            $table->string('check_in');
-            $table->string('check_out');
-
+            $table->dateTime('check_in');
+            $table->dateTime('check_out');
+            $table->integer('duration_of_stay');
+            $table->integer('adult');
+            $table->integer('kids');
             $table->foreignIdFor(User::class)
             ->constrained()
             ->restrictOnUpdate()
