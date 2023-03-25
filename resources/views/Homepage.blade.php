@@ -12,7 +12,7 @@
 	<!-- Dark mode -->
 	<script>
 		const storedTheme = localStorage.getItem('theme')
- 
+
 		const getPreferredTheme = () => {
 			if (storedTheme) {
 				return storedTheme
@@ -66,7 +66,7 @@
 
 			}
 		})
-		
+
 	</script>
 
 	<!-- Favicon -->
@@ -84,7 +84,7 @@
 	<link rel="stylesheet" type="text/css" href="assets/vendor/glightbox/css/glightbox-1.css">
 	<link rel="stylesheet" type="text/css" href="assets/vendor/flatpickr/css/flatpickr.min-1.css">
 	<link rel="stylesheet" type="text/css" href="assets/vendor/choices/css/choices.min.css">
-	
+
 
 	<!-- Theme CSS -->
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
@@ -121,7 +121,7 @@
 			</button>
 
 			<!-- Main navbar START -->
-			
+
 			<!-- Main navbar END -->
 
 			<!-- Nav category menu START -->
@@ -250,7 +250,7 @@
 									</svg>
 								</button>
 							</div>
-						</li> 
+						</li>
 						<!-- Dark mode options END-->
 					</ul>
 				</li>
@@ -266,7 +266,7 @@
 
 <!-- **************** MAIN CONTENT START **************** -->
 <main>
-	
+
 <!-- =======================
 Main Banner START -->
 <section class="pt-3 pt-lg-5">
@@ -276,7 +276,7 @@ Main Banner START -->
 				<!-- Content -->
 				<div class="col-lg-6 position-relative mb-4 mb-md-0">
 					<!-- Title -->
-					<h1 class="mb-4 mt-md-5 display-5">Trouvez et Reserver 
+					<h1 class="mb-4 mt-md-5 display-5">Trouvez et Reserver
 						<span class="position-relative z-index-9">les meilleurs hôtels à proximité.
 							<!-- SVG START -->
 							<span class="position-absolute top-50 start-50 translate-middle z-index-n1 d-none d-md-block mt-4">
@@ -288,17 +288,17 @@ Main Banner START -->
 						</span>
 					</h1>
 					<!-- Info -->
-				
+
 
 					<!-- Buttons -->
 					<div class="hstack gap-4 flex-wrap align-items-center">
 						<!-- Button -->
 						<a href="#" class="btn btn-primary-soft mb-0">Découvrir maintenant</a>
 						<!-- Story button -->
-						
+
 					</div>
 				</div>
-				
+
 				<!-- Image -->
 				<div class="col-lg-6 position-relative">
 
@@ -343,7 +343,7 @@ Main Banner START -->
 				</div>
 			</div>
 			<!-- Content and Image END -->
-			
+
 		<!-- Search START -->
 		<div class="row">
 			<div class="col-xl-10 position-relative mt-n3 mt-xl-n9">
@@ -394,7 +394,7 @@ Main Banner START -->
 									<label class="form-label">Guests & rooms</label>
 									<div class="dropdown guest-selector me-2">
 										<input type="text" class="form-guest-selector form-control selection-result" value="2 Guests 1 Room" data-bs-auto-close="outside" data-bs-toggle="dropdown">
-									
+
 										<!-- dropdown items -->
 										<ul class="dropdown-menu guest-selector-dropdown">
 											<!-- Adult -->
@@ -551,7 +551,7 @@ Best deal START -->
 					</div>
 				</div>
 			</div>
-		</div>	
+		</div>
 		<!-- Slider END -->
 	</div>
 </section>
@@ -808,7 +808,7 @@ About START -->
 
 				<!-- Client rating START -->
 				<div class="position-absolute bottom-0 start-0 z-index-1 mb-4 ms-5">
-					<div class="bg-body d-flex d-inline-block rounded-3 position-relative p-3">	
+					<div class="bg-body d-flex d-inline-block rounded-3 position-relative p-3">
 
 						<!-- Element -->
 						<img src="assets/images/element/01.svg" class="position-absolute top-0 start-0 translate-middle w-40px" alt="">
@@ -860,26 +860,26 @@ About START -->
 					<div class="col-sm-6">
 						<div class="icon-lg bg-success bg-opacity-10 text-success rounded-circle"><i class="fa-solid fa-utensils"></i></div>
 						<h5 class="mt-2">Aliments de qualité</h5>
-						
+
 					</div>
 					<!-- Item -->
 					<div class="col-sm-6">
 						<div class="icon-lg bg-danger bg-opacity-10 text-danger rounded-circle"><i class="bi bi-stopwatch-fill"></i></div>
 						<h5 class="mt-2">Service Rapide</h5>
-						
+
 					</div>
 					<!-- Item -->
 					<div class="col-sm-6">
 						<div class="icon-lg bg-orange bg-opacity-10 text-orange rounded-circle"><i class="bi bi-shield-fill-check"></i></div>
 						<h5 class="mt-2">Grande Sécurité</h5>
-						
+
 					</div>
 					<!-- Item -->
 					<div class="col-sm-6">
 						<div class="icon-lg bg-info bg-opacity-10 text-info rounded-circle"><i class="bi bi-lightning-fill"></i></div>
 						<h5 class="mt-2">Disponibilité</h5>
-						
-					</div>		
+
+					</div>
 				</div>
 				<!-- Features END -->
 
@@ -904,117 +904,37 @@ Featured Hotels START -->
 		</div>
 
 		<div class="row g-4">
-			<!-- Hotel item -->
-			<div class="col-sm-6 col-xl-3">
-				<!-- Card START -->
-				<div class="card card-img-scale overflow-hidden bg-transparent">
-					<!-- Image and overlay -->
-					<div class="card-img-scale-wrapper rounded-3">
-						<!-- Image -->
-						<img src="assets/images/category/hotel/01.jpg" class="card-img" alt="hotel image">
-						<!-- Badge -->
-						<div class="position-absolute bottom-0 start-0 p-3">
-							<div class="badge text-bg-dark fs-6 rounded-pill stretched-link"><i class="bi bi-geo-alt me-2"></i>Douala</div>
-						</div>
-					</div>
 
-					<!-- Card body -->
-					<div class="card-body px-2">
-						<!-- Title -->
-						<h5 class="card-title"><a href="hotel-detail.html.htm" class="stretched-link">Akwa Palace</a></h5>
-						<!-- Price and rating -->
-						<div class="d-flex justify-content-between align-items-center">
-							<h6 class="text-success mb-0">$455 <small class="fw-light">/starting at</small> </h6>
-							<h6 class="mb-0">4<i class="fa-solid fa-star text-warning ms-1"></i></h6>
-						</div>
-					</div>
-				</div>
-				<!-- Card END -->
-			</div>
+            @foreach ($arrayHotel as $hotel)
+                <!-- Hotel item -->
+                <div class="col-sm-6 col-xl-3">
+                    <!-- Card START -->
+                    <div class="card card-img-scale overflow-hidden bg-transparent">
+                        <!-- Image and overlay -->
+                        <div class="card-img-scale-wrapper rounded-3">
+                            <!-- Image -->
+                            <img src="{{ asset($hotel->image) }}" class="card-img" alt="hotel image">
+                            <!-- Badge -->
+                            <div class="position-absolute bottom-0 start-0 p-3">
+                                <div class="badge text-bg-dark fs-6 rounded-pill stretched-link"><i class="bi bi-geo-alt me-2"></i>{{ $hotel->ville }}</div>
+                            </div>
+                        </div>
 
-			<!-- Hotel item -->
-			<div class="col-sm-6 col-xl-3">
-				<!-- Card START -->
-				<div class="card card-img-scale overflow-hidden bg-transparent">
-					<!-- Image and overlay -->
-					<div class="card-img-scale-wrapper rounded-3">
-						<!-- Image -->
-						<img src="assets/images/category/hotel/02.jpg" class="card-img" alt="hotel image">
-						<!-- Badge -->
-						<div class="position-absolute bottom-0 start-0 p-3">
-							<div class="badge text-bg-dark fs-6 rounded-pill stretched-link"><i class="bi bi-geo-alt me-2"></i>Douala</div>
-						</div>
-					</div>
+                        <!-- Card body -->
+                        <div class="card-body px-2">
+                            <!-- Title -->
+                            <h5 class="card-title"><a href="hotel-detail.html.htm" class="stretched-link">{{ $hotel->nom_hotel }}</a></h5>
+                            <!-- Price and rating -->
+                            <div class="d-flex justify-content-between align-items-center">
+                                <h6 class="text-success mb-0">$455 <small class="fw-light">/starting at</small> </h6>
+                                <h6 class="mb-0">{{ $hotel->nombres_etoiles }}<i class="fa-solid fa-star text-warning ms-1"></i></h6>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Card END -->
+                </div>
+            @endforeach
 
-					<!-- Card body -->
-					<div class="card-body px-2">
-						<!-- Title -->
-						<h5 class="card-title"><a href="hotel-detail.html.htm" class="stretched-link">Hotel la falaise</a></h5>
-						<!-- Price and rating -->
-						<div class="d-flex justify-content-between align-items-center">
-							<h6 class="text-success mb-0">$585 <small class="fw-light">/starting at</small> </h6>
-							<h6 class="mb-0">5<i class="fa-solid fa-star text-warning ms-1"></i></h6>
-						</div>
-					</div>
-				</div>
-				<!-- Card END -->
-			</div>
-
-			<!-- Hotel item -->
-			<div class="col-sm-6 col-xl-3">
-				<!-- Card START -->
-				<div class="card card-img-scale overflow-hidden bg-transparent">
-					<!-- Image and overlay -->
-					<div class="card-img-scale-wrapper rounded-3">
-						<!-- Image -->
-						<img src="assets/images/category/hotel/03.jpg" class="card-img" alt="hotel image">
-						<!-- Badge -->
-						<div class="position-absolute bottom-0 start-0 p-3">
-							<div class="badge text-bg-dark fs-6 rounded-pill stretched-link"><i class="bi bi-geo-alt me-2"></i>Yaoundé</div>
-						</div>
-					</div>
-
-					<!-- Card body -->
-					<div class="card-body px-2">
-						<!-- Title -->
-						<h5 class="card-title"><a href="hotel-detail.html.htm" class="stretched-link">La falaise de yaounde</a></h5>
-						<!-- Price and rating -->
-						<div class="d-flex justify-content-between align-items-center">
-							<h6 class="text-success mb-0">$385 <small class="fw-light">/starting at</small> </h6>
-							<h6 class="mb-0">5<i class="fa-solid fa-star text-warning ms-1"></i></h6>
-						</div>
-					</div>
-				</div>
-				<!-- Card END -->
-			</div>
-
-			<!-- Hotel item -->
-			<div class="col-sm-6 col-xl-3">
-				<!-- Card START -->
-				<div class="card card-img-scale overflow-hidden bg-transparent">
-					<!-- Image and overlay -->
-					<div class="card-img-scale-wrapper rounded-3">
-						<!-- Image -->
-						<img src="assets/images/category/hotel/04.jpg" class="card-img" alt="hotel image">
-						<!-- Badge -->
-						<div class="position-absolute bottom-0 start-0 p-3">
-							<div class="badge text-bg-dark fs-6 rounded-pill stretched-link"><i class="bi bi-geo-alt me-2"></i>Yaoundé</div>
-						</div>
-					</div>
-
-					<!-- Card body -->
-					<div class="card-body px-2">
-						<!-- Title -->
-						<h5 class="card-title"><a href="hotel-detail.html.htm" class="stretched-link">Hilton Hotel</a></h5>
-						<!-- Price and rating -->
-						<div class="d-flex justify-content-between align-items-center">
-							<h6 class="text-success mb-0">$665 <small class="fw-light">/starting at</small> </h6>
-							<h6 class="mb-0">5<i class="fa-solid fa-star text-warning ms-1"></i></h6>
-						</div>
-					</div>
-				</div>
-				<!-- Card END -->
-			</div>
 		</div> <!-- Row END -->
 	</div>
 </section>
@@ -1040,7 +960,7 @@ Testimonials START -->
 						<!-- Slide item START -->
 						<div class="px-4 px-md-5">
 							<div class="row justify-content-between align-items-center">
-								
+
 								<div class="col-md-6 col-lg-5 position-relative">
 									<!-- Element -->
 									<div class="position-absolute top-0 start-0 translate-middle z-index-9 mt-7 ms-4">
@@ -1083,7 +1003,7 @@ Testimonials START -->
 						<!-- Slide item START -->
 						<div class="px-4 px-md-5">
 							<div class="row justify-content-between align-items-center">
-								
+
 								<div class="col-md-6 col-lg-5 position-relative">
 									<!-- Element -->
 									<div class="position-absolute top-0 start-0 translate-middle mt-7 ms-4 z-index-9">
@@ -1124,7 +1044,7 @@ Testimonials START -->
 						<!-- Slide item END -->
 
 					</div>
-				</div>	
+				</div>
 			</div>
 			<!-- Slider END -->
 		</div>
@@ -1236,7 +1156,7 @@ Footer START -->
 							<li class="nav-item"><a class="nav-link text-muted" href="#">Support</a></li>
 						</ul>
 					</div>
-									
+
 					<!-- Link block -->
 					<div class="col-6 col-md-3">
 						<h5 class="text-white mb-2 mb-md-4">Global Site</h5>
@@ -1315,7 +1235,7 @@ Footer START -->
 					<li class="list-inline-item"> <a class="btn btn-sm shadow px-2 bg-instagram mb-0" href="#"><i class="fab fa-fw fa-instagram"></i></a> </li>
 					<li class="list-inline-item"> <a class="btn btn-sm shadow px-2 bg-twitter mb-0" href="#"><i class="fab fa-fw fa-twitter"></i></a> </li>
 					<li class="list-inline-item"> <a class="btn btn-sm shadow px-2 bg-linkedin mb-0" href="#"><i class="fab fa-fw fa-linkedin-in"></i></a> </li>
-				</ul>	
+				</ul>
 			</div>
 		</div>
 
@@ -1354,25 +1274,25 @@ Footer END -->
 		<li class="nav-item">
 			<a class="nav-link active" href="index.html-1.htm"><i class="bi bi-house-door fa-fw"></i>
 				<span class="mb-0 nav-text">Home</span>
-			</a>	
+			</a>
 		</li>
 
 		<!-- Nav item My Trips -->
-		<li class="nav-item"> 
+		<li class="nav-item">
 			<a class="nav-link" href="account-bookings.html.htm"><i class="bi bi-briefcase fa-fw"></i>
 				<span class="mb-0 nav-text">My Trips</span>
-			</a>	
+			</a>
 		</li>
 
 		<!-- Nav item Offer -->
-		<li class="nav-item"> 
+		<li class="nav-item">
 			<a class="nav-link" href="offer-detail.html.htm"><i class="bi bi-percent fa-fw"></i>
-				<span class="mb-0 nav-text">Offer</span> 
+				<span class="mb-0 nav-text">Offer</span>
 			</a>
 		</li>
 
 		<!-- Nav item Account -->
-		<li class="nav-item"> 
+		<li class="nav-item">
 			<a class="nav-link" href="account-profile.html.htm"><i class="bi bi-person-circle fa-fw"></i>
 				<span class="mb-0 nav-text">Account</span>
 			</a>

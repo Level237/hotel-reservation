@@ -3,6 +3,7 @@
 use App\Http\Controllers\Admin\DashboardController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\Hotel\DashboardController as HotelDashboardController;
+use App\Http\Controllers\HotelController;
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 
@@ -39,4 +40,5 @@ Route::middleware('auth')->group(function () {
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
 
+Route::get('details/{id}',[HotelController::class,"details"])->name('details.hotel');
 require __DIR__.'/auth.php';
