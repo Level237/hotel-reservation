@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\Admin\DashboardController;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\Hotel\DashboardController as HotelDashboardController;
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 
@@ -25,6 +26,11 @@ Route::get('/dashboard', function () {
 Route::middleware(['auth','admin'])->name('admin.')->prefix('admin')->group(function(){
 
     Route::get('dashboard',[DashboardController::class,'index'])->name('dashboard');
+});
+
+Route::middleware(['auth','hotel'])->name('hotel.')->prefix('hotel')->group(function(){
+
+    Route::get('dashboard',[HotelDashboardController::class,'index'])->name('dashboard');
 });
 
 Route::middleware('auth')->group(function () {

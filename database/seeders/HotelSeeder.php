@@ -19,6 +19,7 @@ class HotelSeeder extends Seeder
             'user_id'=>2,
             'nombres_etoiles'=>4,
             'ville'=>"douala",
+            'image'=>'assets/images/hotel/onomo.jpg',
             "tel"=>"678390037"
         ],
     );
@@ -29,6 +30,7 @@ class HotelSeeder extends Seeder
         'user_id'=>3,
         'nombres_etoiles'=>4,
         'ville'=>"douala",
+        'image'=>'assets/images/hotel/akwa-palace.jpg',
         "tel"=>"667463552"
     ],
 );
@@ -39,6 +41,7 @@ Hotel::create([
     'user_id'=>4,
     'nombres_etoiles'=>3,
     'ville'=>"douala",
+    'image'=>'assets/images/hotel/ibis.jpg',
     "tel"=>"678039436"
 ],
 );
@@ -49,6 +52,7 @@ Hotel::create([
     'user_id'=>5,
     'nombres_etoiles'=>4,
     'ville'=>"douala",
+    'image'=>'assets/images/hotel/falaise-douala.jpg',
     "tel"=>"678039436"
 ],
 );
@@ -59,6 +63,7 @@ Hotel::create([
     'user_id'=>6,
     'nombres_etoiles'=>3,
     'ville'=>"douala",
+    'image'=>'assets/images/hotel/sawa.jpg',
     "tel"=>"678466374"
 ],
 );
@@ -69,6 +74,7 @@ Hotel::create([
     'user_id'=>7,
     'nombres_etoiles'=>5,
     'ville'=>"douala",
+    'image'=>'assets/images/hotel/star-land.jpg',
     "tel"=>"678637734"
 ],
 );
@@ -79,6 +85,7 @@ Hotel::create([
     'user_id'=>8,
     'nombres_etoiles'=>3,
     'ville'=>"douala",
+    'image'=>'assets/images/hotel/residence-falaise.jpg',
     "tel"=>"689473552"
 ],
 );
@@ -89,6 +96,7 @@ Hotel::create([
     'user_id'=>9,
     'nombres_etoiles'=>4,
     'ville'=>"douala",
+    'image'=>'assets/images/hotel/valee.jpg',
     "tel"=>"689473552"
 ],
 );
@@ -99,6 +107,7 @@ Hotel::create([
     'user_id'=>10,
     'nombres_etoiles'=>4,
     'ville'=>"douala",
+    'image'=>'assets/images/hotel/noubou.jpg',
     "tel"=>"689473552"
 ],
 );
@@ -109,6 +118,7 @@ Hotel::create([
     'user_id'=>11,
     'nombres_etoiles'=>4,
     'ville'=>"Yaoundé",
+    'image'=>'assets/images/hotel/falaise-yaounde.jpg',
     "tel"=>"6902373763"
 ],
 );
@@ -119,6 +129,7 @@ Hotel::create([
     'user_id'=>12,
     'nombres_etoiles'=>2,
     'ville'=>"Yaoundé",
+    'image'=>'assets/images/hotel/safyad.jpg',
     "tel"=>"692374893"
 ],
 );
@@ -129,6 +140,7 @@ Hotel::create([
     'user_id'=>13,
     'nombres_etoiles'=>3,
     'ville'=>"Yaoundé",
+    'image'=>'assets/images/hotel/franco.jpg',
     "tel"=>"695636738"
 ],
 );
@@ -139,6 +151,7 @@ Hotel::create([
     'user_id'=>14,
     'nombres_etoiles'=>5,
     'ville'=>"Yaoundé",
+    'image'=>'assets/images/hotel/hilton.jpg',
     "tel"=>"695636738"
 ],
 );
@@ -149,6 +162,7 @@ Hotel::create([
     'user_id'=>15,
     'nombres_etoiles'=>4,
     'ville'=>"Yaoundé",
+    'image'=>'assets/images/hotel/bouns.jpg',
     "tel"=>"695636738"
 ],
 );
@@ -159,6 +173,7 @@ Hotel::create([
     'user_id'=>16,
     'nombres_etoiles'=>3,
     'ville'=>"Yaoundé",
+    'image'=>'assets/images/hotel/massao.jpg',
     "tel"=>"695636738"
 ],
 );
@@ -169,6 +184,7 @@ Hotel::create([
     'user_id'=>17,
     'nombres_etoiles'=>4,
     'ville'=>"Yaoundé",
+    'image'=>'assets/images/hotel/fibi.jpg',
     "tel"=>"695636738"
 ],
 );
@@ -179,6 +195,7 @@ Hotel::create([
     'user_id'=>18,
     'nombres_etoiles'=>3,
     'ville'=>"Yaoundé",
+    'image'=>'assets/images/hotel/couronne.jpg',
     "tel"=>"695636738"
 ],
 );
@@ -189,6 +206,7 @@ Hotel::create([
     'user_id'=>19,
     'nombres_etoiles'=>3,
     'ville'=>"Yaoundé",
+    'image'=>'assets/images/hotel/yahot.jpg',
     "tel"=>"695636738"
 ],
 );
@@ -199,6 +217,7 @@ Hotel::create([
     'user_id'=>20,
     'nombres_etoiles'=>2,
     'ville'=>"Yaoundé",
+    'image'=>'assets/images/hotel/djeuga.jpg',
     "tel"=>"695636738"
 ],
 );
