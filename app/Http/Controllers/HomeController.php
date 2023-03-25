@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Hotel;
+use App\Models\Room_Type;
 use Illuminate\Http\Request;
 
 class HomeController extends Controller
@@ -17,8 +18,10 @@ class HomeController extends Controller
             $hotel=Hotel::find($ids[$i]);
             array_push($arrayHotel,$hotel);
         }
-
+        $classes=Room_Type::all();
         //return $arrayHotel;
-        return view('Homepage',compact('arrayHotel'));
+        return view('Homepage',compact('arrayHotel','classes'));
     }
+
+
 }

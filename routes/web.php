@@ -41,4 +41,5 @@ Route::middleware('auth')->group(function () {
 });
 
 Route::get('details/{id}',[HotelController::class,"details"])->name('details.hotel');
+Route::get('step-one/list-hotels',[HotelController::class,'search'])->name('search');
 require __DIR__.'/auth.php';
