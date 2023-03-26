@@ -35,7 +35,7 @@ class AuthenticatedSessionController extends Controller
         }
         if(auth()->user()->role_id ===3){
 
-            return view('dashboard');
+            return to_route('customer.dashboard');
         }
 
     }
