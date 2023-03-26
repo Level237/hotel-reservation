@@ -14,10 +14,10 @@ Dashboard-Hotel
                 <!-- Avatar and info START -->
                 <div class="d-sm-flex align-items-center">
                     <div class="avatar avatar-xl mb-2 mb-sm-0">
-                        <img class="avatar-img rounded-circle" src="assets/images/avatar/01.jpg" alt="">
+                        <img class="avatar-img rounded-circle" src="{{ asset($hotel->image) }}" alt="">
                     </div>
-                    <h4 class="mb-2 mb-sm-0 ms-sm-3"><span class="fw-light">Hi</span> Jacqueline Miller</h4>
-                    <a href="add-listing.html.htm" class="btn btn-sm btn-primary-soft mb-0 ms-auto flex-shrink-0"><i class="bi bi-plus-lg fa-fw me-2"></i>Add New Listing</a>
+                    <h4 class="mb-2 mb-sm-0 ms-sm-3"><span class="fw-light">Hotel </span>{{ $hotel->nom_hotel }}</h4>
+                    <a href="add-listing.html.htm" class="btn btn-sm btn-primary-soft mb-0 ms-auto flex-shrink-0"><i class="bi bi-plus-lg fa-fw me-2"></i>Nouvelle Chambre</a>
                 </div>
                 <!-- Avatar and info START -->
 
@@ -39,29 +39,22 @@ Dashboard-Hotel
                             <ul class="navbar-nav navbar-offcanvas-menu">
 
                                 <li class="nav-item"> <a class="nav-link active" href="agent-dashboard.html.htm"><i class="bi bi-house-door fa-fw me-1"></i>Dashboard</a>	</li>
-
-                                <li class="nav-item"> <a class="nav-link" href="agent-listings.html.htm"><i class="bi bi-journals fa-fw me-1"></i>Listings</a> </li>
-
-                                <li class="nav-item"> <a class="nav-link" href="agent-bookings.html.htm"><i class="bi bi-bookmark-heart fa-fw me-1"></i>Bookings</a> </li>
-
-                                <li class="nav-item"> <a class="nav-link" href="agent-activities.html.htm"><i class="bi bi-bell fa-fw me-1"></i>Activities</a> </li>
-
-                                <li class="nav-item"> <a class="nav-link" href="agent-earnings.html.htm"><i class="bi bi-graph-up-arrow fa-fw me-1"></i>Earnings</a>	</li>
-
-                                <li class="nav-item"> <a class="nav-link" href="agent-reviews.html.htm"><i class="bi bi-star fa-fw me-1"></i>Reviews</a></li>
-
-                                <li> <a class="nav-link" href="agent-settings.html.htm"><i class="bi bi-gear fa-fw me-1"></i>Settings</a></li>
-
                                 <li class="nav-item dropdown">
                                     <a class="nav-link dropdown-toggle" href="#" id="dropdoanMenu" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                        <i class="bi bi-list-ul fa-fw me-1"></i>Dropdown
+                                        <i class="bi bi-journals fa-fw me-1"></i>Chambres
                                     </a>
                                     <ul class="dropdown-menu" aria-labelledby="dropdoanMenu">
                                         <!-- Dropdown menu -->
-                                        <li> <a class="dropdown-item" href="#">Item 1</a></li>
-                                        <li> <a class="dropdown-item" href="#">Item 2</a></li>
+                                        <li> <a class="dropdown-item" href="#">Listes des chambres</a></li>
+                                        <li> <a class="dropdown-item" href="#">Ajouter une chambre</a></li>
                                     </ul>
                                 </li>
+
+
+                                <li class="nav-item"> <a class="nav-link" href="agent-bookings.html.htm"><i class="bi bi-bookmark-heart fa-fw me-1"></i>Reservations</a> </li>
+
+
+
                             </ul>
                         </div>
                     </div>
@@ -98,7 +91,7 @@ Dashboard-Hotel
                             <!-- Content -->
                             <div class="ms-3">
                                 <h4>56</h4>
-                                <span>Total Listings</span>
+                                <span>Nombres de Chambres</span>
                             </div>
                         </div>
                     </div>
@@ -115,28 +108,14 @@ Dashboard-Hotel
                             <!-- Content -->
                             <div class="ms-3">
                                 <h4>$2,55,365</h4>
-                                <span>Earning</span>
+                                <span>Reservations</span>
                             </div>
                         </div>
                     </div>
                 </div>
 
                 <!-- Counter item -->
-                <div class="col-sm-6 col-xl-3">
-                    <div class="card card-body border">
-                        <div class="d-flex align-items-center">
-                            <!-- Icon -->
-                            <div class="icon-xl bg-warning rounded-3 text-white">
-                                <i class="bi bi-bar-chart-line-fill"></i>
-                            </div>
-                            <!-- Content -->
-                            <div class="ms-3">
-                                <h4>15K</h4>
-                                <span>Visitors</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+
 
                 <!-- Counter item -->
                 <div class="col-sm-6 col-xl-3">
@@ -148,8 +127,8 @@ Dashboard-Hotel
                             </div>
                             <!-- Content -->
                             <div class="ms-3">
-                                <h4>12K</h4>
-                                <span>Total Reviews</span>
+                                <h4>{{ $hotel->nombres_etoiles }}</h4>
+                                <span>Nombre d'etoile</span>
                             </div>
                         </div>
                     </div>

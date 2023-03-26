@@ -3,12 +3,14 @@
 namespace App\Http\Controllers\Hotel;
 
 use App\Http\Controllers\Controller;
+use App\Models\Hotel;
 use Illuminate\Http\Request;
 
 class DashboardController extends Controller
 {
     public function index(){
 
-        return view('Hotel.dashboard');
+        $hotel=Hotel::where('user_id',auth()->user()->id)->first();
+        return view('Hotel.dashboard',compact('hotel'));
     }
 }

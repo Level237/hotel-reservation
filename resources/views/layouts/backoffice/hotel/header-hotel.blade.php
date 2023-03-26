@@ -258,7 +258,7 @@
 				<li class="nav-item ms-3 dropdown">
 					<!-- Avatar -->
 					<a class="avatar avatar-xs p-0" href="#" id="profileDropdown" role="button" data-bs-auto-close="outside" data-bs-display="static" data-bs-toggle="dropdown" aria-expanded="false">
-						<img class="avatar-img rounded-circle" src="assets/images/avatar/01.jpg" alt="avatar">
+						<img class="avatar-img rounded-circle"  src="{{ asset($hotel->image) }}" alt="avatar">
 					</a>
 
 					<!-- Profile dropdown START -->
