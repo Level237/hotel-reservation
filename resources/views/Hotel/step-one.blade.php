@@ -574,7 +574,7 @@ Hotel list START -->
 
 										<!-- Price -->
 										<div class="mt-3 mt-sm-0">
-											<a href="#" class="btn btn-sm btn-dark mb-0 w-100">Selectionnez</a>
+											<a href="{{ route('step-two',$hotel->id ) }}" class="btn btn-sm btn-dark mb-0 w-100">Selectionnez</a>
 										</div>
 									</div>
 								</div>
@@ -586,17 +586,7 @@ Hotel list START -->
 					<!-- Card item END -->
 
 
-					<!-- Pagination -->
-					<nav class="d-flex justify-content-center" aria-label="navigation">
-						<ul class="pagination pagination-primary-soft d-inline-block d-md-flex rounded mb-0">
-							<li class="page-item mb-0"><a class="page-link" href="#" tabindex="-1"><i class="fa-solid fa-angle-left"></i></a></li>
-							<li class="page-item mb-0"><a class="page-link" href="#">1</a></li>
-							<li class="page-item mb-0 active"><a class="page-link" href="#">2</a></li>
-							<li class="page-item mb-0"><a class="page-link" href="#">..</a></li>
-							<li class="page-item mb-0"><a class="page-link" href="#">6</a></li>
-							<li class="page-item mb-0"><a class="page-link" href="#"><i class="fa-solid fa-angle-right"></i></a></li>
-						</ul>
-					</nav>
+
 
 				</div>
 			</div>

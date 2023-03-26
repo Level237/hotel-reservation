@@ -26,10 +26,14 @@ class HotelController extends Controller
     }
 
     public function stepTwo($id,Request $request){
-        $classe=$request->get('classe');
+        $classe=$request->session()->get('classe');
         $rooms=DB::table('chambres')
-                ->join('room__types','chambres.room_type_id','room_types.id')
-                ->select('chambres.id','room__types.title','room__types.price','room__type.adult_capacity','room__type.kids_capacity')
-                ->where('room__types.title',$classe)->get();
+                ->join('room__types','chambres.room__type_id','room__types.id')
+                ->select('chambres.id','chambres.hotel_id','chambres.image','room__types.title','room__types.price','room__types.adult_capacity','room__types.kids_capacity')
+                ->where('room__types.title',$classe)
+                ->where('chambres.hotel_id',$id)
+                ->get();
+
+            return view('Hotel.step-two',compact('rooms'));
     }
 }

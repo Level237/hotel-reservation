@@ -16,8 +16,6 @@ return new class extends Migration
         Schema::disableForeignKeyConstraints();
         Schema::create('chambres', function (Blueprint $table) {
             $table->id();
-            $table->string('classe');
-            $table->string('type');
             $table->string('image');
             $table->boolean('status');
             $table->foreignIdFor(Hotel::class)
@@ -28,7 +26,6 @@ return new class extends Migration
             ->constrained()
             ->restrictOnUpdate()
             ->restrictOnDelete();
-            $table->text('description');
             $table->timestamps();
         });
     }

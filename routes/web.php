@@ -47,5 +47,5 @@ Route::middleware('auth')->group(function () {
 
 Route::get('details/{id}',[HotelController::class,"details"])->name('details.hotel');
 Route::get('step-one/list-hotels',[HotelController::class,'stepOne'])->name('search');
-Route::get('step-two/list-rooms',[HotelController::class,'search'])->name('step-two');
+Route::get('step-two/list-rooms/{id}',[HotelController::class,'stepTwo'])->name('step-two');
 require __DIR__.'/auth.php';
