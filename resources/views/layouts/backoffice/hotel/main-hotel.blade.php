@@ -78,10 +78,9 @@
 	<link rel="stylesheet" href="css2-1?family=DM+Sans:wght@400;500;700&family=Poppins:wght@400;500;700&display=swap">
 
 	<!-- Plugins CSS -->
-	<link rel="stylesheet" type="text/css" href="{{ asset('assets/vendor/font-awesome/css/all.min-1.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('assets/vendor/font-awesome/css/all.min.css') }}">
 	<link rel="stylesheet" type="text/css" href="{{ asset('assets/vendor/bootstrap-icons/bootstrap-icons-1.css') }}">
-	<link rel="stylesheet" type="text/css" href="{{ asset('assets/vendor/aos/aos.css') }}">
-	<link rel="stylesheet" type="text/css" href="{{ asset('assets/vendor/flatpickr/css/flatpickr.min-1.css') }}">
+	<link rel="stylesheet" type="text/css" href="{{ asset('assets/vendor/apexcharts/css/apexcharts.css') }}">
 	<link rel="stylesheet" type="text/css" href="{{ asset('assets/vendor/choices/css/choices.min.css') }}">
 
 	<!-- Theme CSS -->
@@ -89,10 +88,10 @@
 
 </head>
 
-<body class="dashboard">
+<body>
 
 <!-- Header START -->
-@include('layouts.backoffice.customer.header')
+@include('layouts.backoffice.hotel.header-hotel')
 <!-- Header END -->
 
 <!-- **************** MAIN CONTENT START **************** -->
@@ -139,8 +138,7 @@ Footer END -->
 <script src="{{ asset('assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js') }}"></script>
 
 <!-- Vendors -->
-<script src="assets/vendor/aos/aos.js"></script>
-<script src="{{ asset('assets/vendor/flatpickr/js/flatpickr.min.js') }}"></script>
+<script src="{{ asset('assets/vendor/apexcharts/js/apexcharts.min.js') }}"></script>
 <script src="{{ asset('assets/vendor/choices/js/choices.min.js') }}"></script>
 
 <!-- ThemeFunctions -->

@@ -38,6 +38,11 @@ class AuthenticatedSessionController extends Controller
             return to_route('customer.dashboard');
         }
 
+        if(auth()->user()->role_id ===2){
+
+            return to_route('hotel.dashboard');
+        }
+
     }
 
     /**

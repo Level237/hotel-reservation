@@ -530,11 +530,14 @@ Hotel list START -->
 									<!-- Rating and buttons -->
 									<div class="d-flex justify-content-between align-items-center">
 										<ul class="list-inline mb-0">
-											<li class="list-inline-item me-0 small"><i class="fa-solid fa-star text-warning"></i></li>
-											<li class="list-inline-item me-0 small"><i class="fa-solid fa-star text-warning"></i></li>
-											<li class="list-inline-item me-0 small"><i class="fa-solid fa-star text-warning"></i></li>
-											<li class="list-inline-item me-0 small"><i class="fa-solid fa-star text-warning"></i></li>
-											<li class="list-inline-item me-0 small"><i class="fa-solid fa-star-half-alt text-warning"></i></li>
+                                            @for($i = 0; $i < $hotel->nombres_etoiles; $i++)
+                                            <li class="list-inline-item me-0 small"><i class="fa-solid fa-star text-warning"></i></li>
+                                            @endfor
+
+                                            @if($hotel->nombres_etoiles!==5)
+                                            <li class="list-inline-item me-0 small"><i class="fa-solid fa-star-half-alt text-warning"></i></li>
+                                            @endif
+
 										</ul>
 
 										<ul class="list-inline mb-0 z-index-2">
@@ -563,31 +566,12 @@ Hotel list START -->
 									<h5 class="card-title mb-1"><a href="hotel-detail.html.htm">{{ $hotel->nom_hotel }}</a></h5>
 									<small><i class="bi bi-geo-alt me-2"></i>{{ $hotel->ville }}</small>
 									<!-- Amenities -->
-									<ul class="nav nav-divider mt-3">
-										<li class="nav-item">Air Conditioning</li>
-										<li class="nav-item">Wifi</li>
-										<li class="nav-item">Kitchen</li>
-										<li class="nav-item"><a href="#" class="mb-0 text-primary">More+</a></li>
-									</ul>
 
-									<!-- List -->
-									<ul class="list-group list-group-borderless small mb-0 mt-2">
-										<li class="list-group-item d-flex text-success p-0">
-											<i class="bi bi-patch-check-fill me-2"></i>Free Cancellation till 7 Jan 2022
-										</li>
-										<li class="list-group-item d-flex text-success p-0">
-											<i class="bi bi-patch-check-fill me-2"></i>Free Breakfast
-										</li>
-									</ul>
 
 									<!-- Price and Button -->
 									<div class="d-sm-flex justify-content-sm-between align-items-center mt-3 mt-md-auto">
 										<!-- Button -->
-										<div class="d-flex align-items-center">
-											<h5 class="fw-bold mb-0 me-1">$750</h5>
-											<span class="mb-0 me-2">/day</span>
-											<span class="text-decoration-line-through mb-0">$1000</span>
-										</div>
+
 										<!-- Price -->
 										<div class="mt-3 mt-sm-0">
 											<a href="#" class="btn btn-sm btn-dark mb-0 w-100">Selectionnez</a>

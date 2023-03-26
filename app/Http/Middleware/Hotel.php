@@ -15,7 +15,7 @@ class Hotel
      */
     public function handle(Request $request, Closure $next): Response
     {
-        if(!auth()->check() || auth()->user()->role_id !=3){
+        if(!auth()->check() || auth()->user()->role_id !=2){
             abort(403);
         }
         return $next($request);
