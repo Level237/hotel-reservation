@@ -16,18 +16,15 @@ return new class extends Migration
         Schema::disableForeignKeyConstraints();
         Schema::create('reservations', function (Blueprint $table) {
             $table->id();
-            $table->datetime('date_heure');
 
             $table->foreignIdFor(Chambre::class)
             ->constrained()
             ->restrictOnUpdate()
             ->restrictOnDelete();
 
-            $table->dateTime('check_in');
-            $table->dateTime('check_out');
+            $table->string('check_in');
+            $table->string('check_out');
             $table->integer('duration_of_stay');
-            $table->integer('adult');
-            $table->integer('kids');
             $table->foreignIdFor(User::class)
             ->constrained()
             ->restrictOnUpdate()

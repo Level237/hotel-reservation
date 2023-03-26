@@ -21,9 +21,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/',[HomeController::class,'index'])->name("homepage");
 
-Route::get('/dashboard', function () {
-    return view('dashboard');
-})->middleware(['auth', 'verified','customer'])->name('dashboard');
+
 
 Route::middleware(['auth','admin'])->name('admin.')->prefix('admin')->group(function(){
 
@@ -48,4 +46,5 @@ Route::middleware('auth')->group(function () {
 Route::get('details/{id}',[HotelController::class,"details"])->name('details.hotel');
 Route::get('step-one/list-hotels',[HotelController::class,'stepOne'])->name('search');
 Route::get('step-two/list-rooms/{id}',[HotelController::class,'stepTwo'])->name('step-two');
+Route::get('step-tree/final-reservation',[HotelController::class,'stepThree'])->middleware('auth')->name('step-three');
 require __DIR__.'/auth.php';
