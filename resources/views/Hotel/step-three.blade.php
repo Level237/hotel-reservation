@@ -108,7 +108,7 @@ Finalisation de votre reservation
                                 <div class="col-md-6">
                                     <div class="bg-light py-3 px-4 rounded-3">
                                         <h6 class="fw-light small mb-1">Check-in</h6>
-                                        <h6 class="mb-0">4 March 2022</h6>
+                                        <h6 class="mb-0">{{ $checkIn }} 2023</h6>
                                     </div>
                                 </div>
 
@@ -116,7 +116,7 @@ Finalisation de votre reservation
                                 <div class="col-md-6">
                                     <div class="bg-light py-3 px-4 rounded-3">
                                         <h6 class="fw-light small mb-1">Check out</h6>
-                                        <h6 class="mb-0">8 March 2022</h6>
+                                        <h6 class="mb-0">{{ $checkOut }} March 2023</h6>
                                     </div>
                                 </div>
                             </div>
@@ -143,7 +143,7 @@ Finalisation de votre reservation
 
                             <!-- Button -->
                             <div class="d-grid gap-2">
-                                <a href="hotel-booking.html.htm" class="btn btn-dark mb-0">Continue To Book</a>
+                                <a href="hotel-booking.html.htm" class="btn btn-dark mb-0">Reserver</a>
                             </div>
                         </div>
                         <!-- Card body END -->

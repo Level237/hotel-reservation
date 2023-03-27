@@ -48,8 +48,9 @@ class HotelController extends Controller
             return view('Hotel.step-two',compact('rooms'));
     }
 
-    public function stepThree(){
-
-        return view('Hotel.step-three');
+    public function stepThree(Request $request){
+        $checkIn=$request->session()->get('checkIn');
+        $checkOut=$request->session()->get('checkOut');
+        return view('Hotel.step-three',compact('checkIn','checkOut'));
     }
 }
