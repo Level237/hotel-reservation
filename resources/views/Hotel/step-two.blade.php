@@ -487,7 +487,7 @@ liste des Chambres
                                     </div>
                                     <!-- Button -->
                                     <div class="mt-2 mt-sm-0">
-                                        <a href="{{ route('step-three') }}" class="btn btn-sm btn-primary-soft mb-0 w-100">Reserver maintenant<i class="bi bi-arrow-right ms-2"></i></a>
+                                        <a href="{{ route('step-three',$room->id) }}" class="btn btn-sm btn-primary-soft mb-0 w-100">Reserver maintenant<i class="bi bi-arrow-right ms-2"></i></a>
                                     </div>
                                 </div>
                             </div>

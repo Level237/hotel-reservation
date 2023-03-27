@@ -37,7 +37,7 @@ class HotelController extends Controller
 
     public function stepTwo($id,Request $request){
         $classe=$request->session()->get('classe');
-        $request->session()->put('roomId',$id);
+        $request->session()->put('hotelId',$id);
         $rooms=DB::table('chambres')
                 ->join('room__types','chambres.room__type_id','room__types.id')
                 ->select('chambres.id','chambres.hotel_id','chambres.image','room__types.title','room__types.price','room__types.adult_capacity','room__types.kids_capacity')
@@ -48,9 +48,11 @@ class HotelController extends Controller
             return view('Hotel.step-two',compact('rooms'));
     }
 
-    public function stepThree(Request $request){
+    public function stepThree($id,Request $request){
         $checkIn=$request->session()->get('checkIn');
         $checkOut=$request->session()->get('checkOut');
-        return view('Hotel.step-three',compact('checkIn','checkOut'));
+        $hotelId=$request->session()->get('hotelId');
+        $hotel=Hotel::find($hotelId);
+        return view('Hotel.step-three',compact('checkIn','checkOut','hotel'));
     }
 }
