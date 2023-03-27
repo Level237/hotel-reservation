@@ -47,4 +47,5 @@ Route::get('details/{id}',[HotelController::class,"details"])->name('details.hot
 Route::get('step-one/list-hotels',[HotelController::class,'stepOne'])->name('search');
 Route::get('step-two/list-rooms/{id}',[HotelController::class,'stepTwo'])->name('step-two');
 Route::get('step-tree/final-reservation/{id}',[HotelController::class,'stepThree'])->middleware('auth')->name('step-three');
+Route::post('step-final',[HotelController::class,'stepFinal'])->name('step-final');
 require __DIR__.'/auth.php';

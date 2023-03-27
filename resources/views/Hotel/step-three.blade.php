@@ -14,9 +14,9 @@ Finalisation de votre reservation
             <!-- Title -->
             <div class="row">
                 <div class="col-12 mb-4">
-                    <h1 class="fs-3">Luxury Room with Balcony</h1>
+                    <h1 class="fs-3">{{ $hotel->nom_hotel }}</h1>
                     <!-- Location -->
-                    <p class="fw-bold mb-0"><i class="bi bi-geo-alt me-2"></i>5855 W Century Blvd, Los Angeles - 90045 </p>
+                    <p class="fw-bold mb-0"><i class="bi bi-geo-alt me-2"></i>{{ $hotel->ville }} </p>
                 </div>
             </div>
 
@@ -96,7 +96,7 @@ Finalisation de votre reservation
                         <!-- Card header START -->
                         <div class="card-header bg-transparent border-bottom">
                             <!-- Title -->
-                            <h4 class="card-title mb-0">Price Summary</h4>
+                            <h4 class="card-title mb-0">Résumé des prix</h4>
                         </div>
                         <!-- Card header END -->
 
@@ -116,7 +116,7 @@ Finalisation de votre reservation
                                 <div class="col-md-6">
                                     <div class="bg-light py-3 px-4 rounded-3">
                                         <h6 class="fw-light small mb-1">Check out</h6>
-                                        <h6 class="mb-0">{{ $checkOut }} March 2023</h6>
+                                        <h6 class="mb-0">{{ $checkOut }}  2023</h6>
                                     </div>
                                 </div>
                             </div>
@@ -124,27 +124,31 @@ Finalisation de votre reservation
                             <!-- List -->
                             <ul class="list-group list-group-borderless mb-3">
                                 <li class="list-group-item px-2 d-flex justify-content-between">
-                                    <span class="h6 fw-light mb-0">$6,100 x 2 Nights</span>
-                                    <span class="h6 fw-light mb-0">$13,200</span>
+                                    <span class="h6 fw-light mb-0">{{ $room_type->price }} XAF x {{ $duree }}</span>
+                                    <span class="h6 fw-light mb-0">{{ $room_type->price * $duree }} XAF</span>
                                 </li>
-                                <li class="list-group-item px-2 d-flex justify-content-between">
-                                    <span class="h6 fw-light mb-0">10% campaign discount</span>
-                                    <span class="h6 fw-light mb-0">-$500</span>
-                                </li>
-                                <li class="list-group-item px-2 d-flex justify-content-between">
-                                    <span class="h6 fw-light mb-0">Services Fee</span>
-                                    <span class="h6 fw-light mb-0">$100</span>
-                                </li>
+
                                 <li class="list-group-item bg-light d-flex justify-content-between rounded-2 px-2 mt-2">
                                     <span class="h5 fw-normal mb-0 ps-1">Total</span>
-                                    <span class="h5 fw-normal mb-0">$13,500</span>
+                                    <span class="h5 fw-normal mb-0">{{ $room_type->price * $duree }} XAF</span>
                                 </li>
                             </ul>
 
                             <!-- Button -->
+                            <form method="post" action="{{ route('step-final') }}">
+                                @csrf
+
+                                <input type="hidden" name="chambre_id" value="{{ $chambre->id }}">
+                                <input type="hidden" name="check_in" value="{{ $checkIn }}">
+                                <input type="hidden" name="check_out" value="{{ $checkOut }}">
+                                <input type="hidden" name="duree" value="{{ $duree}}">
+                                <input type="hidden" name="price_reser" value="{{ $room_type->price * $duree }}">
                             <div class="d-grid gap-2">
-                                <a href="hotel-booking.html.htm" class="btn btn-dark mb-0">Reserver</a>
+                                <button type="submit" class="btn btn-dark mb-0">
+                                    Reserver
+                                </button >
                             </div>
+                        </form>
                         </div>
                         <!-- Card body END -->
                     </div>

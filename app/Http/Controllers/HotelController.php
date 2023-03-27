@@ -2,12 +2,13 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Chambre;
 use App\Models\Hotel;
 use App\Models\Room_Type;
 use Carbon\Carbon;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
-
+use App\Models\Reservation;
 class HotelController extends Controller
 {
     public function details($id){
@@ -37,7 +38,6 @@ class HotelController extends Controller
 
     public function stepTwo($id,Request $request){
         $classe=$request->session()->get('classe');
-        $request->session()->put('hotelId',$id);
         $rooms=DB::table('chambres')
                 ->join('room__types','chambres.room__type_id','room__types.id')
                 ->select('chambres.id','chambres.hotel_id','chambres.image','room__types.title','room__types.price','room__types.adult_capacity','room__types.kids_capacity')
@@ -51,8 +51,28 @@ class HotelController extends Controller
     public function stepThree($id,Request $request){
         $checkIn=$request->session()->get('checkIn');
         $checkOut=$request->session()->get('checkOut');
-        $hotelId=$request->session()->get('hotelId');
-        $hotel=Hotel::find($hotelId);
-        return view('Hotel.step-three',compact('checkIn','checkOut','hotel'));
+        $duree=$request->session()->get('duree');
+        $hotelId=$request->session()->get('id');
+        $chambre=Chambre::find($id);
+        $request->session()->put('chambreId',$id);
+        $hotel=Hotel::find($chambre->hotel_id);
+        $room_type=Room_type::find($chambre->room__type_id);
+        //return $hotel;
+        //return $room_type;
+        return view('Hotel.step-three',compact('checkIn','checkOut','hotel','room_type','duree','chambre'));
+    }
+
+    public function stepFinal(Request $request){
+
+        $reservation=Reservation::create([
+            'chambre_id'=>$request->chambre_id,
+            'check_in'=>$request->check_in,
+            'check_out'=>$request->check_out,
+            'duration_of_stay'=>$request->duree,
+            'price_reser'=>$request->price_reser,
+            'user_id'=>auth()->user()->id
+        ]);
+
+        return 'reservation creer avec success';
     }
 }
