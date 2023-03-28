@@ -71,4 +71,13 @@ class ReservationController extends Controller
     {
         //
     }
+    public function cancel($id){
+
+        $reservation=Reservation::find($id);
+        $reservation->update([
+            'status'=>0,
+        ]);
+
+        return redirect()->back()->with('cancel','reservation annulée');
+    }
 }

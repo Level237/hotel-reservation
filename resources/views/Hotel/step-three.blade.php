@@ -135,7 +135,7 @@ Finalisation de votre reservation
                             </ul>
 
                             <!-- Button -->
-                            <form method="post" action="{{ route('step-final') }}">
+                            <form method="post" action="{{ route('customer.step-final') }}">
                                 @csrf
 
                                 <input type="hidden" name="chambre_id" value="{{ $chambre->id }}">

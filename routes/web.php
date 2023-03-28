@@ -38,6 +38,9 @@ Route::middleware(['auth','customer'])->name('customer.')->prefix('customer')->g
 
     Route::get('dashboard',[CustomerDashboardController::class,'index'])->name('dashboard');
     Route::resource('my-reservations',ReservationController::class);
+    Route::post('step-final',[HotelController::class,'stepFinal'])->name('step-final');
+    Route::get('confirm/reservation',[HotelController::class,"confirm"])->name('confirm');
+    Route::post('cancel/reservation/{id}',[ReservationController::class,'cancel'])->name('cancel');
 });
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
@@ -49,6 +52,6 @@ Route::get('details/{id}',[HotelController::class,"details"])->name('details.hot
 Route::get('step-one/list-hotels',[HotelController::class,'stepOne'])->name('search');
 Route::get('step-two/list-rooms/{id}',[HotelController::class,'stepTwo'])->name('step-two');
 Route::get('step-tree/final-reservation/{id}',[HotelController::class,'stepThree'])->middleware('auth')->name('step-three');
-Route::post('step-final',[HotelController::class,'stepFinal'])->name('step-final');
+
 
 require __DIR__.'/auth.php';

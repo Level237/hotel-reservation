@@ -64,6 +64,9 @@ class HotelController extends Controller
 
     public function stepFinal(Request $request){
 
+        if($request->session()->has('reservation')){
+            $request->session()->forget('reservation');
+        }
         $reservation=Reservation::create([
             'chambre_id'=>$request->chambre_id,
             'check_in'=>$request->check_in,
@@ -74,6 +77,17 @@ class HotelController extends Controller
             'status'=>1,
         ]);
 
-        return 'reservation creer avec success';
+        $request->session()->put('reservation', $reservation);
+
+        return to_route('customer.confirm');
+    }
+
+    public function confirm(Request $request){
+
+        $reservation=$request->session()->get('reservation');
+        $chambre=Chambre::find($reservation->chambre_id);
+        $hotel=Hotel::find($chambre->hotel_id);
+        //return $hotel;
+        return view('customer.booking-confirm',compact('reservation','hotel'));
     }
 }

@@ -4,6 +4,12 @@ Mes Reservations
 @endsection
 
 @section('content')
+@if(Session::get("cancel"))
+<div class="alert alert-primary" role="alert">
+	{{ Session::get("cancel") }}
+</div>
+@endif
+
 <main>
 
     <!-- =======================
@@ -82,52 +88,58 @@ Mes Reservations
 
 
                             <!-- Wishlist item START -->
-                            @foreach ($reservations as $reservation)
-                                <div class="card shadow p-2">
-                                    <div class="row g-0">
-                                        <!-- Card img -->
-                                        <div class="col-md-3">
-                                            <img src="{{ asset($reservation->image) }}" class="card-img rounded-2" alt="Card image">
-                                        </div>
+                            @forelse ($reservations as $reservation)
+                            <div class="card shadow p-2">
+                                <div class="row g-0">
+                                    <!-- Card img -->
+                                    <div class="col-md-3">
+                                        <img src="{{ asset($reservation->image) }}" class="card-img rounded-2" alt="Card image">
+                                    </div>
 
-                                        <!-- Card body -->
-                                        <div class="col-md-9">
-                                            <div class="card-body py-md-2 d-flex flex-column h-100">
+                                    <!-- Card body -->
+                                    <div class="col-md-9">
+                                        <div class="card-body py-md-2 d-flex flex-column h-100">
 
-                                                <!-- Rating and buttons -->
-                                                <div class="d-flex justify-content-between align-items-center">
-                                                    <ul class="list-inline small mb-0">
-                                                        <li class="list-inline-item me-0"><i class="fa-solid fa-star text-warning"></i></li>
-                                                        <li class="list-inline-item me-0"><i class="fa-solid fa-star text-warning"></i></li>
-                                                        <li class="list-inline-item me-0"><i class="fa-solid fa-star text-warning"></i></li>
-                                                        <li class="list-inline-item me-0"><i class="fa-solid fa-star text-warning"></i></li>
-                                                        <li class="list-inline-item"><i class="fa-solid fa-star-half-alt text-warning"></i></li>
-                                                    </ul>
+                                            <!-- Rating and buttons -->
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <ul class="list-inline small mb-0">
+                                                    <li class="list-inline-item me-0"><i class="fa-solid fa-star text-warning"></i></li>
+                                                    <li class="list-inline-item me-0"><i class="fa-solid fa-star text-warning"></i></li>
+                                                    <li class="list-inline-item me-0"><i class="fa-solid fa-star text-warning"></i></li>
+                                                    <li class="list-inline-item me-0"><i class="fa-solid fa-star text-warning"></i></li>
+                                                    <li class="list-inline-item"><i class="fa-solid fa-star-half-alt text-warning"></i></li>
+                                                </ul>
 
+
+                                            </div>
+
+                                            <!-- Title -->
+                                            <h5 class="card-title mb-1">{{ $reservation->nom_hotel }}- Chambre numero {{ $reservation->chambre_id }}</h5>
+                                            <small><i class="bi bi-geo-alt me-2"></i>{{ $reservation->ville }}</small>
+
+                                            <!-- Price and Button -->
+                                            <div class="d-sm-flex justify-content-sm-between align-items-center mt-3 mt-md-auto">
+                                                <!-- Button -->
+                                                <div class="d-flex align-items-center">
+                                                    <h5 class="fw-bold mb-0 me-1">{{ $reservation->price_reser }} XAF</h5>
 
                                                 </div>
-
-                                                <!-- Title -->
-                                                <h5 class="card-title mb-1">{{ $reservation->nom_hotel }}- Chambre numero {{ $reservation->chambre_id }}</h5>
-                                                <small><i class="bi bi-geo-alt me-2"></i>{{ $reservation->ville }}</small>
-
-                                                <!-- Price and Button -->
-                                                <div class="d-sm-flex justify-content-sm-between align-items-center mt-3 mt-md-auto">
-                                                    <!-- Button -->
-                                                    <div class="d-flex align-items-center">
-                                                        <h5 class="fw-bold mb-0 me-1">{{ $reservation->price_reser }} XAF</h5>
-                                                        <span class="mb-0 me-2">/day</span>
-                                                    </div>
-                                                    <!-- Price -->
-                                                    <div class="mt-3 mt-sm-0">
-                                                        <a href="hotel-detail.html.htm" class="btn btn-sm btn-danger w-100 mb-0">Annuler cette reservation</a>
-                                                    </div>
+                                                <!-- Price -->
+                                                <div class="mt-3 mt-sm-0">
+                                                    <form action="{{ route('customer.cancel',$reservation->id) }}" method="post">
+                                                    @csrf
+                                                    <button type="submit" class="btn btn-sm btn-danger w-100 mb-0">Annuler cette reservation</button>
+                                                    </form>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                            @endforeach
+                            </div>
+                            @empty
+                                Aucune Reservation
+                            @endforelse
+
 
                             <!-- Wishlist item END -->
 
