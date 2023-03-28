@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\Admin\DashboardController;
 use App\Http\Controllers\customer\DashboardController as CustomerDashboardController;
+use App\Http\Controllers\customer\ReservationController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\Hotel\DashboardController as HotelDashboardController;
 use App\Http\Controllers\HotelController;
@@ -36,6 +37,7 @@ Route::middleware(['auth','hotel'])->name('hotel.')->prefix('hotel')->group(func
 Route::middleware(['auth','customer'])->name('customer.')->prefix('customer')->group(function(){
 
     Route::get('dashboard',[CustomerDashboardController::class,'index'])->name('dashboard');
+    Route::resource('my-reservations',ReservationController::class);
 });
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
@@ -48,4 +50,5 @@ Route::get('step-one/list-hotels',[HotelController::class,'stepOne'])->name('sea
 Route::get('step-two/list-rooms/{id}',[HotelController::class,'stepTwo'])->name('step-two');
 Route::get('step-tree/final-reservation/{id}',[HotelController::class,'stepThree'])->middleware('auth')->name('step-three');
 Route::post('step-final',[HotelController::class,'stepFinal'])->name('step-final');
+
 require __DIR__.'/auth.php';

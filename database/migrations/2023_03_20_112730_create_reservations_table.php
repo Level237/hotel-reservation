@@ -30,6 +30,7 @@ return new class extends Migration
             ->restrictOnUpdate()
             ->restrictOnDelete();
             $table->double('price_reser')->nullable();
+            $table->boolean('status');
             $table->timestamps();
         });
     }

@@ -70,7 +70,8 @@ class HotelController extends Controller
             'check_out'=>$request->check_out,
             'duration_of_stay'=>$request->duree,
             'price_reser'=>$request->price_reser,
-            'user_id'=>auth()->user()->id
+            'user_id'=>auth()->user()->id,
+            'status'=>1,
         ]);
 
         return 'reservation creer avec success';

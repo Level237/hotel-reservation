@@ -18,7 +18,8 @@ class Reservation extends Model
         'check_out',
         'duration_of_stay',
         'user_id',
-        'price_reser'
+        'price_reser',
+        'status'
     ];
 
     public function user():BelongsTo{
