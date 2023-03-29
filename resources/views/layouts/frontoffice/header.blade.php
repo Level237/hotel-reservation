@@ -41,7 +41,7 @@
 					<li class="nav-item"> <a class="nav-link" href="{{ route('login') }}"><i class="fa-solid fa-sign-out me-2"></i>Connexion</a> </li>
 
 					<!-- Nav item Cabs -->
-					<li class="nav-item"> <a class="nav-link" href="index-cab.html.htm"><i class="fa-solid fa-car me-2"></i>Reserver Rapidement</a></li>
+					<li class="nav-item"> <a class="nav-link" href="{{ route('customer.fast') }}"><i class="fa-solid fa-car me-2"></i>Reserver Rapidement</a></li>
 				</ul>
 			</div>
 			<!-- Nav category menu END -->

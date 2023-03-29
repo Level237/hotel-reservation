@@ -76,7 +76,9 @@ class HotelController extends Controller
             'user_id'=>auth()->user()->id,
             'status'=>1,
         ]);
-
+        if($request->session()->has('reservation')){
+            $request->session()->forget('reservation');
+        }
         $request->session()->put('reservation', $reservation);
 
         return to_route('customer.confirm');
