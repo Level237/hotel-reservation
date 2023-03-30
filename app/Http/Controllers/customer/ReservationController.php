@@ -19,6 +19,7 @@ class ReservationController extends Controller
         $reservations=DB::table('chambres')
                         ->join('reservations','chambres.id','reservations.chambre_id')
                         ->join('hotels','hotels.id','chambres.hotel_id')
+                        
                         ->select('reservations.id','reservations.check_in','reservations.check_out','reservations.status','reservations.price_reser','reservations.user_id','hotels.nom_hotel','hotels.nombres_etoiles','hotels.ville','reservations.chambre_id','chambres.image')
                         ->where('reservations.user_id',auth()->user()->id)
                         ->where('reservations.status',1)
