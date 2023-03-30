@@ -25,8 +25,8 @@
                     </a>
                     <!-- Submenu -->
                     <ul class="nav collapse flex-column" id="collapsebooking" data-bs-parent="#navbar-sidebar">
-                        <li class="nav-item"> <a class="nav-link" href="admin-booking-list.html.htm">Listes des Hotels</a></li>
-                        <li class="nav-item"> <a class="nav-link" href="admin-booking-detail.html.htm">Creer un Hotel</a></li>
+                        <li class="nav-item"> <a class="nav-link" href="{{ route('admin.hotels.index') }}">Listes des Hotels</a></li>
+                        <li class="nav-item"> <a class="nav-link" href="{{ route('admin.hotels.create') }}">Creer un Hotel</a></li>
                     </ul>
                 </li>
                 <li class="nav-item">

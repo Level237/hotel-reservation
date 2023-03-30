@@ -6,6 +6,8 @@ use App\Http\Controllers\customer\ReservationController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\Hotel\DashboardController as HotelDashboardController;
 use App\Http\Controllers\HotelController;
+use App\Http\Controllers\Admin\HotelController as AdminHotelController;
+
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 
@@ -27,6 +29,7 @@ Route::get('/',[HomeController::class,'index'])->name("homepage");
 Route::middleware(['auth','admin'])->name('admin.')->prefix('admin')->group(function(){
 
     Route::get('dashboard',[DashboardController::class,'index'])->name('dashboard');
+    Route::resource('hotels',AdminHotelController::class);
 });
 
 Route::middleware(['auth','hotel'])->name('hotel.')->prefix('hotel')->group(function(){
@@ -48,7 +51,7 @@ Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
-
+    
 });
 
 Route::get('details/{id}',[HotelController::class,"details"])->name('details.hotel');

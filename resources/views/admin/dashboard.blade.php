@@ -75,102 +75,127 @@ Dashboard
 
     <!-- Widget START -->
     <div class="row g-4">
-        <!-- Booking Chart START -->
-        <div class="col-xxl-8">
-            <!-- Chart START -->
-            <div class="card shadow h-100">
-                <!-- Card header -->
-                <div class="card-header border-bottom">
-                    <h5 class="card-header-title">Guest Activity</h5>
-                </div>
+       
 
-                <!-- Card body -->
-                <div class="card-body">
-                    <!-- Content -->
-                    <div class="d-flex gap-4 mb-3">
-                        <h6><span class="fw-light"><i class="bi bi-square-fill text-primary"></i> Check-in:</span> 475 Guests</h6>
-                        <h6><span class="fw-light"><i class="bi bi-square-fill text-info"></i> Check-out:</span> 157 Guests</h6>
-                    </div>
-                    <!-- Apex chart -->
-                    <div id="ChartGuesttraffic" class="mt-2"></div>
-                </div>
+       
+        <div class="card shadow mt-5">
+            <!-- Card header START -->
+            <div class="card-header border-bottom">
+                <h5 class="card-header-title">Reservations</h5>
             </div>
-            <!-- Chart END -->
-        </div>
-        <!-- Booking Chart END -->
+            <!-- Card header END -->
 
-        <!-- Booking graph START -->
-        <div class="col-lg-6 col-xxl-4">
-            <div class="card shadow h-100">
-                <!-- Card header -->
-                <div class="card-header border-bottom">
-                    <h5 class="card-header-title">Room Availability</h5>
-                </div>
-
-                <!-- Card body START -->
-                <div class="card-body p-3">
-                    <!-- Chart -->
-                    <div class="col-sm-6 mx-auto">
-                        <div class="d-flex justify-content-center" id="ChartTrafficRooms"></div>
+            <!-- Card body START -->
+            <div class="card-body">
+                <!-- Search and select START -->
+                <div class="row g-3 align-items-center justify-content-between mb-3">
+                    <!-- Search -->
+                    <div class="col-md-8">
+                        <form class="rounded position-relative">
+                            <input class="form-control pe-5" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn border-0 px-3 py-0 position-absolute top-50 end-0 translate-middle-y" type="submit"><i class="fas fa-search fs-6"></i></button>
+                        </form>
                     </div>
 
-                    <!-- Content -->
-                    <ul class="list-group list-group-borderless mb-0">
-                        <li class="list-group-item d-flex justify-content-between">
-                            <span class="h6 fw-light mb-0"><i class="text-success fas fa-circle me-2"></i> Available</span>
-                            <span class="h6 fw-light mb-0">73 Rooms</span>
-                        </li>
-                        <li class="list-group-item d-flex justify-content-between">
-                            <span class="h6 fw-light mb-0"><i class="text-danger fas fa-circle me-2"></i> Sold Out</span>
-                            <span class="h6 fw-light mb-0">245 Rooms</span>
-                        </li>
-                    </ul>
+                    <!-- Select option -->
+                    <div class="col-md-3">
+                        <!-- Short by filter -->
+                        <form>
+                            <select class="form-select js-choice" aria-label=".form-select-sm">
+                                <option value="">Sort by</option>
+                                <option>Free</option>
+                                <option>Newest</option>
+                                <option>Oldest</option>
+                            </select>
+                        </form>
+                    </div>
                 </div>
-            </div>
-        </div>
-        <!-- Booking graph END -->
+                <!-- Search and select END -->
 
-        <!-- Rooms START -->
-        <div class="col-lg-12">
-            <div class="card shadow h-100">
-                <!-- Card header -->
-                <div class="card-header border-bottom d-flex justify-content-between align-items-center">
-                    <h5 class="card-header-title">Reservations Recent</h5>
-                    <a href="#" class="btn btn-link p-0 mb-0">View all</a>
+                <!-- Table head -->
+                <div class="bg-light rounded p-3 d-none d-lg-block">
+                    <div class="row row-cols-7 g-4">
+                        <div class="col"><h6 class="mb-0">Reserver par</h6></div>
+                        <div class="col"><h6 class="mb-0">De</h6></div>
+                        <div class="col"><h6 class="mb-0">Au</h6></div>
+                        <div class="col"><h6 class="mb-0">Hotel</h6></div>
+                        <div class="col"><h6 class="mb-0">Prix</h6></div>
+                        <div class="col"><h6 class="mb-0">Numero Chambre</h6></div>
+                        <div class="col"><h6 class="mb-0">Action</h6></div>
+                    </div>
                 </div>
 
-                <!-- Card body START -->
-                <table class="table">
-                   
-                    <thead>
-                      <tr>
-                        <th scope="col">Utilisateur</th>
-                        <th scope="col">Email</th>
-                        <th scope="col">Hotel</th>
-                        <th scope="col">Du</th>
-                        <th scope="col">Au</th>
-                        <th scope="col">Prix</th>
-                        <th scope="col">numero Chambre</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                        @forelse ($reservations as $reservation)
-                            <tr>
-                                <td >{{ $reservation->name }}</td>
-                                <th scope="row">{{ $reservation->email }}</th>
-                                <td>{{ $reservation->nom_hotel }}</td>
-                                <td>{{ $reservation->check_in }}</td>
-                                <td>{{ $reservation->check_out }}</td>
-                                <td>{{ $reservation->price_reser }}</td>
-                                <td>numero {{ $reservation->chambre_id }}</td>
-                            </tr>
-                        @empty
-                            
-                        @endforelse
-                     
-                    </tbody>
-                  </table>
+                @foreach ($reservations as $reservation)
+                <div class="row row-cols-xl-7 align-items-lg-center border-bottom g-4 px-2 py-4">
+                    <!-- Data item -->
+                    <div class="col">
+                        <small class="d-block d-lg-none">Reserver par:</small>
+                        <div class="d-flex align-items-center">
+                            <!-- Avatar -->
+                           
+                            <!-- Info -->
+                            <div class="ms-2">
+                                <h6 class="mb-0 fw-light">{{ $reservation->name }}</h6>
+                            </div>
+                        </div>
+                    </div>	
+
+                    <!-- Data item -->
+                    <div class="col">
+                        <small class="d-block d-lg-none">De:</small>
+                        <h6 class="mb-0 fw-normal">{{ $reservation->check_in }}</h6>
+                    </div>
+
+                    <!-- Data item -->
+                    <div class="col">
+                        <small class="d-block d-lg-none">Au:</small>
+                        <h6 class="mb-0 fw-normal">{{ $reservation->check_out }}</h6>
+                    </div>
+
+                    <!-- Data item -->
+                    <div class="col">
+                        <small class="d-block d-lg-none">Reserver par:</small>
+                        <div class="d-flex align-items-center">
+                            <!-- Avatar -->
+                            <div class="avatar avatar-xs flex-shrink-0">
+                                <img class="avatar-img rounded-circle" src="{{ asset($reservation->image) }}" alt="avatar">
+                            </div>
+                            <!-- Info -->
+                            <div class="ms-2">
+                                <h6 class="mb-0 fw-light">{{ $reservation->nom_hotel }}</h6>
+                            </div>
+                        </div>
+                    </div>	
+
+                    <!-- Data item -->
+                    <div class="col">
+                        <small class="d-block d-lg-none">Prix:</small>
+                        <h6 class="text-success mb-0">{{ $reservation->price_reser }} XAF</h6>
+                    </div>
+
+                    <!-- Data item -->
+                    <div class="col">
+                        <small class="d-block d-lg-none">Numero Chambre:</small>
+                        <div class="badge bg-success bg-opacity-10 text-success">{{ $reservation->chambre_id }}</div>
+                    </div>
+
+                    <!-- Data item -->
+                    <div class="col"><a href="#" class="btn btn-sm btn-light mb-0">View</a></div>
+                </div>
+                @endforeach
+                <!-- Table data -->
+                
+
+
+               
+
+               
             </div>
+            <!-- Card body END -->
+
+            <!-- Card footer START -->
+            
+            <!-- Card footer END -->
         </div>
         <!-- Rooms END -->
 
