@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
+use App\Models\User;
 use Illuminate\Http\Request;
 use App\Models\Hotel;
 class HotelController extends Controller
@@ -21,7 +22,7 @@ class HotelController extends Controller
      */
     public function create()
     {
-        //
+        return view('admin.hotel.add');
     }
 
     /**
@@ -29,7 +30,30 @@ class HotelController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $user=new User;
+        $user->name=$request->name;
+        $user->email=$request->email;
+        $user->password=$request->password;
+        $user->role_id=2;
+        $user->save();
+
+        
+
+            // $path = $request->file('logo')->store('logo','public');
+
+            
+            $path = $request->file('image')->store('assets/images/hotel','public');
+    
+        $hotel=new Hotel;
+        $hotel->nom_hotel=$request->nom_hotel;
+        $hotel->ville=$request->localisation;
+        $hotel->nombres_etoiles=$request->nombres_etoiles;
+        $hotel->tel=$request->tel;
+        $hotel->image=$path;
+        $hotel->user_id=$user->id;
+        $hotel->save();
+
+        return to_route('admin.hotels.index')->with('success','Hotel enregistré avec success');
     }
 
     /**
