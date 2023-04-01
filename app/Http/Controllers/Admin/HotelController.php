@@ -42,14 +42,17 @@ class HotelController extends Controller
             // $path = $request->file('logo')->store('logo','public');
 
             
-            $path = $request->file('image')->store('assets/images/hotel','public');
-    
+           
+            $path = 'assets/images/hotel';
+            $myimage = $request->image->getClientOriginalName();
+            $pathImage="$path/$myimage";
+            $request->image->move(public_path($path), $myimage);
         $hotel=new Hotel;
         $hotel->nom_hotel=$request->nom_hotel;
         $hotel->ville=$request->localisation;
         $hotel->nombres_etoiles=$request->nombres_etoiles;
         $hotel->tel=$request->tel;
-        $hotel->image=$path;
+        $hotel->image=$pathImage;
         $hotel->user_id=$user->id;
         $hotel->save();
 
@@ -83,8 +86,11 @@ class HotelController extends Controller
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(string $id)
+    public function destroy(Hotel $hotel)
     {
-        //
+       
+
+        $hotel->delete();
+        return redirect()->back()->with('danger','hotel suprimé avec success');
     }
 }

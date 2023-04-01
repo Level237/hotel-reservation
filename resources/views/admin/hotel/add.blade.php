@@ -45,7 +45,7 @@ Ajouter un Hotel
                                     <div class="col-12">
                                         <label class="form-label">Nom Hotel</label>
                                         <div class="input-group">
-                                            <input type="text" name="nom_hotel" class="form-control" placeholder="Entrer le nom de l'Hotel">
+                                            <input type="text" required name="nom_hotel" class="form-control" placeholder="Entrer le nom de l'Hotel">
                                            
                                         </div>
                                     </div>
@@ -59,28 +59,28 @@ Ajouter un Hotel
                                     </div>
                                     <div class="col-md-6">
                                         <label class="form-label">Nombre d'etoile</label>
-                                        <input class="form-control" name="nombres_etoiles" type="number" placeholder="" max="5" min="1" >
+                                        <input class="form-control" name="nombres_etoiles" required type="number" placeholder="" max="5" min="1" >
                                     </div>
                                     <!-- Contact number -->
                                     <div class="col-md-6">
                                         <label class="form-label">Contact</label>
-                                        <input class="form-control" name="tel" type="text" placeholder="Enter le numero de telephone">
+                                        <input class="form-control" name="tel" type="text" required placeholder="Enter le numero de telephone">
                                     </div>
     
                                     <!-- Email -->
                                     <div class="col-md-6">
                                         <label class="form-label">Adresse email</label>
-                                        <input class="form-control" name="email" type="email" placeholder="Enter l'email">
+                                        <input class="form-control" name="email" type="email" required placeholder="Enter l'email">
                                     </div>
     
                                     <!-- Address -->
                                     <div class="col-12">
                                         <label class="form-label">Nom du Gerant</label>
-                                        <input type="text" name="name" class="form-control" placeholder="Entrer le nom du Gerant de l'Hotel">
+                                        <input type="text" name="name" class="form-control" required placeholder="Entrer le nom du Gerant de l'Hotel">
                                     </div>
                                     <div class="col-12">
                                         <label class="form-label">Mot de passe de l'hotel</label>
-                                        <input type="password" name="password" class="form-control" placeholder="Entrer le mot de passe">
+                                        <input type="password" name="password" class="form-control" required placeholder="Entrer le mot de passe">
                                     </div>
                         
                                     <!-- City -->
@@ -112,7 +112,7 @@ Ajouter un Hotel
                                                 
                                                 
                                             </div>
-                                            <input type="file" name="image">
+                                            <input type="file" name="image" required>
                                         </div> 
                                         <p class="small mb-0 mt-2"><b>Note:</b>Uniquement JPG, JPEG et PNG. Les dimensions suggérées sont 600px * 450px. L'image la plus grande sera recadrée au format 4:3 pour s'adapter à nos vignettes/présentations..</p>
                                     </div>

@@ -98,8 +98,8 @@
         <!-- Navbar brand for xl START -->
         <div class="d-flex align-items-center">
             <a class="navbar-brand" href="index.html-1.htm">
-                <img class="light-mode-item navbar-brand-item" src="assets/images/logo.svg" alt="logo">
-                <img class="dark-mode-item navbar-brand-item" src="assets/images/logo-light.svg" alt="logo">
+                <img class="light-mode-item navbar-brand-item" src="{{ asset('assets/images/logo-hotel.svg') }}" alt="logo">
+                <img class="dark-mode-item navbar-brand-item" src="{{ asset('assets/images/logo-hotel-light.svg') }}" alt="logo">
             </a>
         </div>
         <!-- Navbar brand for xl END -->
@@ -236,7 +236,9 @@
 						<!-- Topbar menu END -->
 					</div>
 					<!-- Top bar left END -->
-					
+                    
+
+
 					<!-- Top bar right START -->
 					<ul class="nav flex-row align-items-center list-unstyled ms-xl-auto">
 						<!-- Dark mode options START -->
@@ -361,7 +363,16 @@
 			</div>
 		</nav>
 		<!-- Top bar END -->
-	
+        @if(Session::get("success"))
+        <div class="alert alert-primary" role="alert">
+            {{ Session::get("success") }}
+        </div>
+        @endif
+        @if(Session::get("danger"))
+        <div class="alert alert-danger" role="alert">
+            {{ Session::get("danger") }}
+        </div>
+        @endif
 		<!-- Page main content START -->
 		<div class="page-content-wrapper p-xxl-4">
 
@@ -457,8 +468,13 @@
 								<div class="card-footer pt-0">
 									<!-- Price -->
 									
-									
-                                    <a href="" class="btn btn-sm btn-danger-soft mb-0 w-100">Suprimer</a>
+									<form method="POST" action="{{ route('admin.hotels.destroy',$hotel->id) }}" onsubmit="return confirm('Etes vous sur?')">
+                                        @csrf
+                                        @method('delete')
+                                        <button type="submit" class="btn btn-sm btn-danger-soft mb-0 w-100"  ><i class="material-icons md-delete_forever" aria-hidden="true" title="Suprimer">Suprimer</i></button>
+
+                                       </form>
+                                   
 								</div>
 							</div>
 						</div>
