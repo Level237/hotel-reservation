@@ -17,7 +17,7 @@ Dashboard-Hotel
                         <img class="avatar-img rounded-circle" src="{{ asset($hotel->image) }}" alt="">
                     </div>
                     <h4 class="mb-2 mb-sm-0 ms-sm-3"><span class="fw-light">Hotel </span>{{ $hotel->nom_hotel }}</h4>
-                    <a href="add-listing.html.htm" class="btn btn-sm btn-primary-soft mb-0 ms-auto flex-shrink-0"><i class="bi bi-plus-lg fa-fw me-2"></i>Nouvelle Chambre</a>
+
                 </div>
                 <!-- Avatar and info START -->
 
@@ -38,20 +38,11 @@ Dashboard-Hotel
                         <div class="navbar navbar-expand-xl">
                             <ul class="navbar-nav navbar-offcanvas-menu">
 
-                                <li class="nav-item"> <a class="nav-link active" href="agent-dashboard.html.htm"><i class="bi bi-house-door fa-fw me-1"></i>Dashboard</a>	</li>
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" href="#" id="dropdoanMenu" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                        <i class="bi bi-journals fa-fw me-1"></i>Chambres
-                                    </a>
-                                    <ul class="dropdown-menu" aria-labelledby="dropdoanMenu">
-                                        <!-- Dropdown menu -->
-                                        <li> <a class="dropdown-item" href="#">Listes des chambres</a></li>
-                                        <li> <a class="dropdown-item" href="#">Ajouter une chambre</a></li>
-                                    </ul>
-                                </li>
+                                <li class="nav-item"> <a class="nav-link active" href="{{ route('hotel.dashboard') }}"><i class="bi bi-house-door fa-fw me-1"></i>Dashboard</a>	</li>
 
 
-                                <li class="nav-item"> <a class="nav-link" href="agent-bookings.html.htm"><i class="bi bi-bookmark-heart fa-fw me-1"></i>Reservations</a> </li>
+
+
 
 
 
@@ -90,7 +81,7 @@ Dashboard-Hotel
                             </div>
                             <!-- Content -->
                             <div class="ms-3">
-                                <h4>56</h4>
+                                <h4>{{ $chambreCount }}</h4>
                                 <span>Nombres de Chambres</span>
                             </div>
                         </div>
@@ -107,7 +98,7 @@ Dashboard-Hotel
                             </div>
                             <!-- Content -->
                             <div class="ms-3">
-                                <h4>$2,55,365</h4>
+                                <h4>{{ $reservationCount }}</h4>
                                 <span>Reservations</span>
                             </div>
                         </div>
@@ -137,55 +128,7 @@ Dashboard-Hotel
             <!-- Counter END -->
 
             <!-- Graph START -->
-            <div class="row g-4">
-                <!-- Booking Chart START -->
-                <div class="col-lg-7 col-xl-8">
-                    <!-- Chart START -->
-                    <div class="card border h-100">
-                        <!-- Card header -->
-                        <div class="card-header border-bottom">
-                            <h5 class="card-header-title">Booking stats</h5>
-                        </div>
-                        <!-- Card body -->
-                        <div class="card-body">
-                            <!-- Apex chart -->
-                            <div id="apexChartTrafficStats" class="mt-2"></div>
-                        </div>
-                    </div>
-                    <!-- Chart END -->
-                </div>
-                <!-- Booking Chart END -->
 
-                <!-- Booking graph START -->
-                <div class="col-lg-4">
-                    <div class="card border h-100">
-
-                        <!-- Card header -->
-                        <div class="card-header border-bottom d-flex justify-content-between align-items-center">
-                            <h5 class="card-header-title">Booking Traffic</h5>
-                            <a href="#" class="btn btn-link p-0 mb-0">View all</a>
-                        </div>
-
-                        <!-- Card body START -->
-                        <div class="card-body p-3">
-                            <!-- Chart -->
-                            <div class="col-sm-6 mx-auto">
-                                <div class="d-flex justify-content-center" id="ChartTrafficViews"></div>
-                            </div>
-
-                            <!-- Content -->
-                            <ul class="list-group list-group-borderless align-items-center mt-3">
-                                <li class="list-group-item"><i class="text-primary fas fa-circle me-2"></i>Organic</li>
-                                <li class="list-group-item"><i class="text-success fas fa-circle me-2"></i>Google</li>
-                                <li class="list-group-item"><i class="text-warning fas fa-circle me-2"></i>Social media</li>
-                                <li class="list-group-item"><i class="text-danger fas fa-circle me-2"></i>Referral program</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <!-- Booking graph END -->
-            </div>
-            <!-- Graph END -->
 
             <!-- Booking table START -->
             <div class="row">
@@ -194,8 +137,8 @@ Dashboard-Hotel
                         <!-- Card header START -->
                         <div class="card-header border-bottom">
                             <div class="d-sm-flex justify-content-between align-items-center">
-                                <h5 class="mb-2 mb-sm-0">Upcoming Bookings</h5>
-                                <a href="#" class="btn btn-sm btn-primary mb-0">View All</a>
+                                <h5 class="mb-2 mb-sm-0">Vos Dernieres reservations</h5>
+
                             </div>
                         </div>
                         <!-- Card header END -->
@@ -203,28 +146,7 @@ Dashboard-Hotel
                         <!-- Card body START -->
                         <div class="card-body">
                             <!-- Search and select START -->
-                            <div class="row g-3 align-items-center justify-content-between mb-3">
-                                <!-- Search -->
-                                <div class="col-md-8">
-                                    <form class="rounded position-relative">
-                                        <input class="form-control pe-5" type="search" placeholder="Search" aria-label="Search">
-                                        <button class="btn border-0 px-3 py-0 position-absolute top-50 end-0 translate-middle-y" type="submit"><i class="fas fa-search fs-6"></i></button>
-                                    </form>
-                                </div>
 
-                                <!-- Select option -->
-                                <div class="col-md-3">
-                                    <!-- Short by filter -->
-                                    <form>
-                                        <select class="form-select js-choice" aria-label=".form-select-sm">
-                                            <option value="">Sort by</option>
-                                            <option>Free</option>
-                                            <option>Newest</option>
-                                            <option>Oldest</option>
-                                        </select>
-                                    </form>
-                                </div>
-                            </div>
                             <!-- Search and select END -->
 
                             <!-- Hotel room list START -->
@@ -233,72 +155,39 @@ Dashboard-Hotel
                                     <!-- Table head -->
                                     <thead class="table-light">
                                         <tr>
-                                            <th scope="col" class="border-0 rounded-start">#</th>
-                                            <th scope="col" class="border-0">Name</th>
-                                            <th scope="col" class="border-0">Type</th>
-                                            <th scope="col" class="border-0">Date</th>
-                                            <th scope="col" class="border-0">status</th>
-                                            <th scope="col" class="border-0">Payment</th>
+
+                                            <th scope="col" class="border-0">reserver par</th>
+                                            <th scope="col" class="border-0">De</th>
+                                            <th scope="col" class="border-0">Au</th>
+                                            <th scope="col" class="border-0">Hotel</th>
+                                            <th scope="col" class="border-0">Prix</th>
+                                            <th scope="col" class="border-0">Numero Chalbre</th>
                                             <th scope="col" class="border-0 rounded-end">Action</th>
                                         </tr>
                                     </thead>
 
                                     <!-- Table body START -->
-                                    <tbody class="border-top-0">
+                                    <tbodwy class="border-top-0">
+                                        @forelse ($reservations as $reservation)
+                                            <tr>
+                                                <td> <h6 class="mb-0">{{ $reservation->name }}</h6> </td>
+                                                <td> <h6 class="mb-0"><a href="#">{{ $reservation->check_in }}Deluxe Pool View</a></h6> </td>
+                                                <td> {{ $reservation->check_out }}</td>
+                                                <td>  <img class="avatar-img rounded-circle" src="{{ asset($reservation->image) }}" alt="avatar"> </td>
+                                                <td> {{ $reservation->nom_hotel }} </td>
+                                                <td>{{ $reservation->price_reser }} XAF </td>
+                                                <td>{{ $reservation->chambre_id }}</td>
+                                                <td> <div class="badge text-bg-success"></div> </td>
+                                                <td> <div class="badge bg-success bg-opacity-10 text-success">Full payment</div> </td>
+                                                <td> <a href="#" class="btn btn-sm btn-light mb-0">View</a> </td>
+                                            </tr>
+                                        @empty
+                                            Aucune Reservation disponible
+                                        @endforelse
                                         <!-- Table item -->
-                                        <tr>
-                                            <td> <h6 class="mb-0">01</h6> </td>
-                                            <td> <h6 class="mb-0"><a href="#">Deluxe Pool View</a></h6> </td>
-                                            <td> With Breakfast </td>
-                                            <td> Nov 22 - 25 </td>
-                                            <td> <div class="badge text-bg-success">Booked</div> </td>
-                                            <td> <div class="badge bg-success bg-opacity-10 text-success">Full payment</div> </td>
-                                            <td> <a href="#" class="btn btn-sm btn-light mb-0">View</a> </td>
-                                        </tr>
 
-                                        <!-- Table item -->
-                                        <tr>
-                                            <td> <h6 class="mb-0">02</h6> </td>
-                                            <td> <h6 class="mb-0"><a href="#">Deluxe Pool View with Breakfast</a></h6> </td>
-                                            <td> Free Cancellation | Breakfast only </td>
-                                            <td> Nov 24 - 28 </td>
-                                            <td> <div class="badge text-bg-success">Booked</div> </td>
-                                            <td> <div class="badge bg-orange bg-opacity-10 text-orange">On Property</div> </td>
-                                            <td> <a href="#" class="btn btn-sm btn-light mb-0">View</a> </td>
-                                        </tr>
 
-                                        <!-- Table item -->
-                                        <tr>
-                                            <td> <h6 class="mb-0">03</h6> </td>
-                                            <td> <h6 class="mb-0"><a href="#">Luxury Room with Balcony</a></h6> </td>
-                                            <td> Free Cancellation | Breakfast + Lunch/Dinner </td>
-                                            <td> Nov 24 - 28 </td>
-                                            <td> <div class="badge text-bg-info">Reserved</div> </td>
-                                            <td> <div class="badge bg-info bg-opacity-10 text-info">Half Payment</div> </td>
-                                            <td> <a href="#" class="btn btn-sm btn-light mb-0">View</a> </td>
-                                        </tr>
 
-                                        <!-- Table item -->
-                                        <tr>
-                                            <td> <h6 class="mb-0">04</h6> </td>
-                                            <td> <h6 class="mb-0"><a href="#">Deluxe Room Twin Bed With Balcony</a></h6> </td>
-                                            <td> Free Cancellation </td>
-                                            <td> Nov 28 - 30 </td>
-                                            <td> <div class="badge text-bg-success">Booked</div> </td>
-                                            <td> <div class="badge bg-success bg-opacity-10 text-success">Full Payment</div> </td>
-                                            <td> <a href="#" class="btn btn-sm btn-light mb-0">View</a> </td>
-                                        </tr>
-
-                                        <!-- Table item -->
-                                        <tr>
-                                            <td> <h6 class="mb-0">05</h6> </td>
-                                            <td> <h6 class="mb-0"><a href="#">Room With Free Cancellation | Breakfast + Lunch</a></h6> </td>
-                                            <td> Free Cancellation </td>
-                                            <td> Nov 28 - 30 </td>
-                                            <td> <div class="badge text-bg-info">Reserved</div> </td>
-                                            <td> <div class="badge bg-success bg-opacity-10 text-success">Full Payment</div> </td>
-                                            <td> <a href="#" class="btn btn-sm btn-light mb-0">View</a> </td>
-                                        </tr>
                                     </tbody>
                                     <!-- Table body END -->
                                 </table>
@@ -308,28 +197,7 @@ Dashboard-Hotel
                         <!-- Card body END -->
 
                         <!-- Card footer START -->
-                        <div class="card-footer pt-0">
-                            <!-- Pagination and content -->
-                            <div class="d-sm-flex justify-content-sm-between align-items-sm-center">
-                                <!-- Content -->
-                                <p class="mb-sm-0 text-center text-sm-start">Showing 1 to 8 of 20 entries</p>
-                                <!-- Pagination -->
-                                <nav class="mb-sm-0 d-flex justify-content-center" aria-label="navigation">
-                                    <ul class="pagination pagination-sm pagination-primary-soft mb-0">
-                                        <li class="page-item disabled">
-                                            <a class="page-link" href="#" tabindex="-1">Prev</a>
-                                        </li>
-                                        <li class="page-item"><a class="page-link" href="#">1</a></li>
-                                        <li class="page-item active"><a class="page-link" href="#">2</a></li>
-                                        <li class="page-item disabled"><a class="page-link" href="#">..</a></li>
-                                        <li class="page-item"><a class="page-link" href="#">15</a></li>
-                                        <li class="page-item">
-                                            <a class="page-link" href="#">Next</a>
-                                        </li>
-                                    </ul>
-                                </nav>
-                            </div>
-                        </div>
+
                         <!-- Card footer END -->
                     </div>
                 </div>

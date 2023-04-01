@@ -23,180 +23,15 @@
 				<ul class="navbar-nav navbar-nav-scroll">
 
 					<!-- Nav item Listing -->
-					<li class="nav-item dropdown">
-						<a class="nav-link dropdown-toggle" href="#" id="listingMenu" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Listings</a>
-						<ul class="dropdown-menu" aria-labelledby="listingMenu">
-							<!-- Dropdown submenu -->
-							<li class="dropdown-submenu dropend">
-								<a class="dropdown-item dropdown-toggle" href="#">Hotel</a>
-								<ul class="dropdown-menu" data-bs-popper="none">
-									<li> <a class="dropdown-item" href="index.html-1.htm">Hotel Home</a></li>
-									<li> <a class="dropdown-item" href="index-hotel-chain.html.htm">Hotel Chain</a></li>
-									<li> <a class="dropdown-item" href="index-resort.html.htm">Hotel Resort</a></li>
-									<li> <a class="dropdown-item" href="hotel-grid.html.htm">Hotel Grid</a></li>
-									<li> <a class="dropdown-item" href="hotel-list.html.htm">Hotel List</a></li>
-									<li> <a class="dropdown-item" href="hotel-detail.html.htm">Hotel Detail</a></li>
-									<li> <a class="dropdown-item" href="room-detail.html.htm">Room Detail</a></li>
-									<li> <a class="dropdown-item" href="hotel-booking.html.htm">Hotel Booking</a></li>
-								</ul>
-							</li>
 
-							<!-- Dropdown submenu -->
-							<li class="dropdown-submenu dropend">
-								<a class="dropdown-item dropdown-toggle" href="#">Flight</a>
-								<ul class="dropdown-menu" data-bs-popper="none">
-									<li> <a class="dropdown-item" href="index-flight.html.htm">Flight Home</a></li>
-									<li> <a class="dropdown-item" href="flight-list.html.htm">Flight List</a></li>
-									<li> <a class="dropdown-item" href="flight-detail.html.htm">Flight Detail</a></li>
-									<li> <a class="dropdown-item" href="flight-booking.html.htm">Flight Booking</a></li>
-								</ul>
-							</li>
-
-							<!-- Dropdown submenu -->
-							<li class="dropdown-submenu dropend">
-								<a class="dropdown-item dropdown-toggle" href="#">Tour</a>
-								<ul class="dropdown-menu" data-bs-popper="none">
-									<li> <a class="dropdown-item" href="index-tour.html.htm">Tour Home</a></li>
-									<li> <a class="dropdown-item" href="tour-grid.html.htm">Tour Grid</a></li>
-									<li> <a class="dropdown-item" href="tour-detail.html.htm">Tour Detail</a></li>
-									<li> <a class="dropdown-item" href="tour-booking.html.htm">Tour Booking</a></li>
-								</ul>
-							</li>
-
-							<!-- Dropdown submenu -->
-							<li class="dropdown-submenu dropend">
-								<a class="dropdown-item dropdown-toggle" href="#">Cab</a>
-								<ul class="dropdown-menu" data-bs-popper="none">
-									<li> <a class="dropdown-item" href="index-cab.html.htm">Cab Home</a></li>
-									<li> <a class="dropdown-item" href="cab-list.html.htm">Cab List</a></li>
-									<li> <a class="dropdown-item" href="cab-detail.html.htm">Cab Detail</a></li>
-									<li> <a class="dropdown-item" href="cab-booking.html.htm">Cab Booking</a></li>
-								</ul>
-							</li>
-
-							<!-- Dropdown submenu -->
-							<li class="dropdown-submenu dropend">
-								<a class="dropdown-item dropdown-toggle" href="#">Directory</a>
-								<ul class="dropdown-menu" data-bs-popper="none">
-									<li> <a class="dropdown-item" href="index-directory.html.htm">Directory Home</a></li>
-									<li> <a class="dropdown-item" href="directory-detail.html.htm">Directory Detail</a></li>
-								</ul>
-							</li>
-
-							<!-- Dropdown submenu -->
-							<li class="dropdown-submenu dropend">
-								<a class="dropdown-item dropdown-toggle" href="#">Add Listing</a>
-								<ul class="dropdown-menu" data-bs-popper="none">
-									<li> <a class="dropdown-item" href="join-us.html.htm">Join us</a></li>
-									<li> <a class="dropdown-item" href="add-listing.html.htm">Add Listing</a></li>
-									<li> <a class="dropdown-item" href="add-listing-minimal.html.htm">Add Listing Minimal</a></li>
-									<li> <a class="dropdown-item" href="listing-added.html.htm">Listing Added</a></li>
-								</ul>
-							</li>
-
-							<!-- Dropdown submenu -->
-							<li class="dropdown-submenu dropend">
-								<a class="dropdown-item dropdown-toggle" href="#">Hero</a>
-								<ul class="dropdown-menu" data-bs-popper="none">
-									<li> <a class="dropdown-item" href="hero-inline-form.html.htm">Hero Inline Form</a></li>
-									<li> <a class="dropdown-item" href="hero-multiple-search.html.htm">Hero Multiple Search</a></li>
-									<li> <a class="dropdown-item" href="hero-image-gallery.html.htm">Hero Image Gallery</a></li>
-									<li> <a class="dropdown-item" href="hero-split.html.htm">Hero Split</a></li>
-								</ul>
-							</li>
-
-							<li> <a class="dropdown-item" href="booking-confirm.html.htm">Booking Confirmed</a></li>
-							<li> <a class="dropdown-item" href="compare-listing.html.htm">Compare Listing</a></li>
-							<li> <a class="dropdown-item" href="offer-detail.html.htm">Offer Detail</a></li>
-						</ul>
-					</li>
 
 					<!-- Nav item Pages -->
-					<li class="nav-item dropdown">
-						<a class="nav-link dropdown-toggle" href="#" id="pagesMenu" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Pages</a>
-						<ul class="dropdown-menu" aria-labelledby="pagesMenu">
-
-							<li> <a class="dropdown-item" href="about.html.htm">About</a></li>
-							<li> <a class="dropdown-item" href="contact.html.htm">Contact</a></li>
-							<li> <a class="dropdown-item" href="contact-2.html.htm">Contact 2</a></li>
-							<li> <a class="dropdown-item" href="team.html.htm">Our Team</a></li>
-
-							<!-- Dropdown submenu -->
-							<li class="dropdown-submenu dropend">
-								<a class="dropdown-item dropdown-toggle" href="#">Authentication</a>
-								<ul class="dropdown-menu" data-bs-popper="none">
-									<li> <a class="dropdown-item" href="sign-in.html.htm">Sign In</a></li>
-									<li> <a class="dropdown-item" href="sign-up.html.htm">Sign Up</a></li>
-									<li> <a class="dropdown-item" href="forgot-password.html.htm">Forgot Password</a></li>
-									<li> <a class="dropdown-item" href="two-factor-auth.html.htm">Two factor authentication</a></li>
-								</ul>
-							</li>
-
-							<!-- Dropdown submenu -->
-							<li class="dropdown-submenu dropend">
-								<a class="dropdown-item dropdown-toggle" href="#">Blog</a>
-								<ul class="dropdown-menu" data-bs-popper="none">
-									<li> <a class="dropdown-item" href="blog.html.htm">Blog</a></li>
-									<li> <a class="dropdown-item" href="blog-detail.html.htm">Blog Detail</a></li>
-								</ul>
-							</li>
-
-							<!-- Dropdown submenu -->
-							<li class="dropdown-submenu dropend">
-								<a class="dropdown-item dropdown-toggle" href="#">Help</a>
-								<ul class="dropdown-menu" data-bs-popper="none">
-									<li> <a class="dropdown-item" href="help-center.html.htm">Help Center</a></li>
-									<li> <a class="dropdown-item" href="help-detail.html.htm">Help Detail</a></li>
-									<li> <a class="dropdown-item" href="privacy-policy.html.htm">Privacy Policy</a></li>
-									<li> <a class="dropdown-item" href="terms-of-service.html.htm">Terms of Service</a></li>
-								</ul>
-							</li>
-
-							<li> <a class="dropdown-item" href="pricing.html.htm">Pricing</a></li>
-							<li> <a class="dropdown-item" href="faq.html.htm">FAQs</a></li>
-							<li> <a class="dropdown-item" href="error.html.htm">Error 404</a></li>
-							<li> <a class="dropdown-item" href="coming-soon.html.htm">Coming Soon</a></li>
-						</ul>
-					</li>
 
 					<!-- Nav item Account -->
-					<li class="nav-item dropdown">
-						<a class="nav-link dropdown-toggle" href="#" id="accounntMenu" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Accounts</a>
-						<ul class="dropdown-menu" aria-labelledby="accounntMenu">
-							<!-- Dropdown submenu -->
-							<li class="dropdown-submenu dropend">
-								<a class="dropdown-item dropdown-toggle" href="#">User Profile</a>
-								<ul class="dropdown-menu" data-bs-popper="none">
-									<li> <a class="dropdown-item" href="account-profile.html.htm">My Profile</a> </li>
-									<li> <a class="dropdown-item" href="account-bookings.html.htm">My Bookings</a> </li>
-									<li> <a class="dropdown-item" href="account-travelers.html.htm">Travelers</a> </li>
-									<li> <a class="dropdown-item" href="account-payment-details.html.htm">Payment Details</a> </li>
-									<li> <a class="dropdown-item" href="account-wishlist.html.htm">Wishlist</a> </li>
-									<li> <a class="dropdown-item" href="account-settings.html.htm">Settings</a> </li>
-									<li> <a class="dropdown-item" href="account-delete.html.htm">Delete Profile</a> </li>
-								</ul>
-							</li>
-
-							<!-- Dropdown submenu -->
-							<li class="dropdown-submenu dropend">
-								<a class="dropdown-item dropdown-toggle" href="#">Agent Dashboard</a>
-								<ul class="dropdown-menu" data-bs-popper="none">
-									<li> <a class="dropdown-item" href="agent-dashboard.html.htm">Dashboard</a> </li>
-									<li> <a class="dropdown-item" href="agent-listings.html.htm">Listings</a> </li>
-									<li> <a class="dropdown-item" href="agent-bookings.html.htm">Bookings</a> </li>
-									<li> <a class="dropdown-item" href="agent-activities.html.htm">Activities</a> </li>
-									<li> <a class="dropdown-item" href="agent-earnings.html.htm">Earnings</a> </li>
-									<li> <a class="dropdown-item" href="agent-reviews.html.htm">Reviews</a> </li>
-									<li> <a class="dropdown-item" href="agent-settings.html.htm">Settings</a> </li>
-								</ul>
-							</li>
-
-							<li> <a class="dropdown-item" href="admin-dashboard.html.htm">Master Admin</a> </li>
-						</ul>
-					</li>
 
 					<!-- Nav item Contact -->
-					<li class="nav-item"> <a class="nav-link" href="contact.html.htm">Contact Us</a>	</li>
+					<li class="nav-item"> <a class="nav-link" href="{{ route('homepage') }}">Accueil</a>	</li>
+                    <li class="nav-item"> <a class="nav-link" href="{{ route('hotel.dashboard') }}">Dashboard</a>	</li>
 				</ul>
 			</div>
 			<!-- Main navbar END -->
@@ -205,60 +40,14 @@
 			<ul class="nav flex-row align-items-center list-unstyled ms-xl-auto">
 
 				<!-- Notification dropdown START -->
-				<li class="nav-item ms-0 ms-md-3 dropdown">
-					<!-- Notification button -->
-					<a class="nav-link p-0" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside">
-						<i class="bi bi-bell fa-fw fs-5"></i>
-					</a>
-					<!-- Notification dote -->
-					<span class="notif-badge animation-blink"></span>
 
-					<!-- Notification dropdown menu START -->
-					<div class="dropdown-menu dropdown-animation dropdown-menu-end dropdown-menu-size-md p-0 shadow-lg">
-						<div class="card bg-transparent">
-							<!-- Card header -->
-							<div class="card-header bg-transparent d-flex justify-content-between align-items-center border-bottom">
-								<h6 class="m-0">Notifications <span class="badge bg-danger bg-opacity-10 text-danger ms-2">4 new</span></h6>
-								<a class="small" href="#">Clear all</a>
-							</div>
-
-							<!-- Card body START -->
-							<div class="card-body p-0">
-								<ul class="list-group list-group-flush list-unstyled p-2">
-									<!-- Notification item -->
-									<li>
-										<a href="#" class="list-group-item list-group-item-action rounded notif-unread border-0 mb-1 p-3">
-											<h6 class="mb-2">New! Booking flights from New York ✈️</h6>
-											<p class="mb-0 small">Find the flexible ticket on flights around the world. Start searching today</p>
-											<span>Wednesday</span>
-										</a>
-									</li>
-									<!-- Notification item -->
-									<li>
-										<a href="#" class="list-group-item list-group-item-action rounded border-0 mb-1 p-3">
-											<h6 class="mb-2">Sunshine saving are here 🌞 save 30% or more on a stay</h6>
-											<span>15 Nov 2022</span>
-										</a>
-									</li>
-								</ul>
-							</div>
-							<!-- Card body END -->
-
-							<!-- Card footer -->
-							<div class="card-footer bg-transparent text-center border-top">
-								<a href="#" class="btn btn-sm btn-link mb-0 p-0">See all incoming activity</a>
-							</div>
-						</div>
-					</div>
-					<!-- Notification dropdown menu END -->
-				</li>
 				<!-- Notification dropdown END -->
 
 				<!-- Profile dropdown START -->
-				<li class="nav-item ms-3 dropdown">
+                <li class="nav-item ms-3 dropdown">
 					<!-- Avatar -->
 					<a class="avatar avatar-xs p-0" href="#" id="profileDropdown" role="button" data-bs-auto-close="outside" data-bs-display="static" data-bs-toggle="dropdown" aria-expanded="false">
-						<img class="avatar-img rounded-circle"  src="{{ asset($hotel->image) }}" alt="avatar">
+						<img class="avatar-img rounded-circle" src="{{ asset('assets/images/profile-man.jfif') }}" alt="avatar">
 					</a>
 
 					<!-- Profile dropdown START -->
@@ -268,22 +57,24 @@
 							<div class="d-flex align-items-center">
 								<!-- Avatar -->
 								<div class="avatar me-3">
-									<img class="avatar-img rounded-circle shadow" src="assets/images/avatar/01.jpg" alt="avatar">
+									<img class="avatar-img rounded-circle shadow" src="{{ asset('assets/images/profile-man.jfif') }}" alt="avatar">
 								</div>
 								<div>
-									<a class="h6 mt-2 mt-sm-0" href="#">Lori Ferguson</a>
-									<p class="small m-0">example@gmail.com</p>
+									<a class="h6 mt-2 mt-sm-0" href="#">{{ auth()->user()->name }}</a>
+									<p class="small m-0">{{ auth()->user()->email }}</p>
 								</div>
 							</div>
 						</li>
 
 						<!-- Links -->
 						<li> <hr class="dropdown-divider"></li>
-						<li><a class="dropdown-item" href="#"><i class="bi bi-bookmark-check fa-fw me-2"></i>My Bookings</a></li>
-						<li><a class="dropdown-item" href="#"><i class="bi bi-heart fa-fw me-2"></i>My Wishlist</a></li>
-						<li><a class="dropdown-item" href="#"><i class="bi bi-gear fa-fw me-2"></i>Settings</a></li>
-						<li><a class="dropdown-item" href="#"><i class="bi bi-info-circle fa-fw me-2"></i>Help Center</a></li>
-						<li><a class="dropdown-item bg-danger-soft-hover" href="#"><i class="bi bi-power fa-fw me-2"></i>Sign Out</a></li>
+
+
+                        <form method="POST" action="{{ route('logout') }}" id="logout-form">
+                            @csrf
+                          </form>
+						<li><a class="dropdown-item bg-danger-soft-hover" onclick="event.preventDefault();
+                            document.getElementById('logout-form').submit();"><i class="bi bi-power fa-fw me-2"></i>Deconnexion</a></li>
 						<li> <hr class="dropdown-divider"></li>
 
 						<!-- Dark mode options START -->

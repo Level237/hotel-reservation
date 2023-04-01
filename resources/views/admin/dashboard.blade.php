@@ -35,7 +35,7 @@ Dashboard
         </div>
 
         <!-- Counter item -->
-       
+
 
         <!-- Counter item -->
         <div class="col-md-6 col-xxl-3">
@@ -70,14 +70,14 @@ Dashboard
     <!-- Counter boxes END -->
 
     <!-- Hotel grid START -->
-   
+
     <!-- Hotel grid END -->
 
     <!-- Widget START -->
     <div class="row g-4">
-       
 
-       
+
+
         <div class="card shadow mt-5">
             <!-- Card header START -->
             <div class="card-header border-bottom">
@@ -132,13 +132,13 @@ Dashboard
                         <small class="d-block d-lg-none">Reserver par:</small>
                         <div class="d-flex align-items-center">
                             <!-- Avatar -->
-                           
+
                             <!-- Info -->
                             <div class="ms-2">
                                 <h6 class="mb-0 fw-light">{{ $reservation->name }}</h6>
                             </div>
                         </div>
-                    </div>	
+                    </div>
 
                     <!-- Data item -->
                     <div class="col">
@@ -154,7 +154,7 @@ Dashboard
 
                     <!-- Data item -->
                     <div class="col">
-                        <small class="d-block d-lg-none">Reserver par:</small>
+                        <small class="d-block d-lg-none">Hotel:</small>
                         <div class="d-flex align-items-center">
                             <!-- Avatar -->
                             <div class="avatar avatar-xs flex-shrink-0">
@@ -165,7 +165,7 @@ Dashboard
                                 <h6 class="mb-0 fw-light">{{ $reservation->nom_hotel }}</h6>
                             </div>
                         </div>
-                    </div>	
+                    </div>
 
                     <!-- Data item -->
                     <div class="col">
@@ -184,23 +184,23 @@ Dashboard
                 </div>
                 @endforeach
                 <!-- Table data -->
-                
 
 
-               
 
-               
+
+
+
             </div>
             <!-- Card body END -->
 
             <!-- Card footer START -->
-            
+
             <!-- Card footer END -->
         </div>
         <!-- Rooms END -->
 
         <!-- Upcoming Arrival START -->
-       
+
         <!-- Reviews END -->
     </div>
     <!-- Widget END -->

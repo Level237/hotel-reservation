@@ -1,9 +1,9 @@
 <nav class="navbar sidebar navbar-expand-xl navbar-light">
     <!-- Navbar brand for xl START -->
     <div class="d-flex align-items-center">
-        <a class="navbar-brand" href="index.html-1.htm">
-            <img class="light-mode-item navbar-brand-item" src="assets/images/logo.svg" alt="logo">
-            <img class="dark-mode-item navbar-brand-item" src="assets/images/logo-light.svg" alt="logo">
+        <a class="navbar-brand" href="{{ route('homepage') }}">
+            <img class="light-mode-item navbar-brand-item" src="{{asset('assets/images/logo-hotel.svg')}}" alt="logo" style="width: 100px;height:100px;">
+            <img class="dark-mode-item navbar-brand-item" src="{{asset('assets/images/logo-hotel-light.svg')}}" alt="logo">
         </a>
     </div>
     <!-- Navbar brand for xl END -->
@@ -59,12 +59,12 @@
                     <!-- Submenu -->
                     <ul class="nav collapse flex-column" id="collapseagent" data-bs-parent="#navbar-sidebar">
                         <li class="nav-item"> <a class="nav-link" href="admin-agent-list.html">Listes des Reservations</a></li>
-                        
+
                     </ul>
                 </li>
 
                 <!-- Menu item -->
-               
+
             </ul>
             <!-- Sidebar menu end -->
 
@@ -76,7 +76,7 @@
                   </form>
 
 
-                
+
                 <a class="h6 fw-light mb-0 text-body"  data-bs-toggle="tooltip" data-bs-placement="top" aria-label="Sign out" href="{{ route('logout') }}" onclick="event.preventDefault();
                 document.getElementById('logout-form').submit();">
                     <i class="fa-solid fa-arrow-right-from-bracket"></i> Log out

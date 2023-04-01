@@ -32,29 +32,49 @@
 			<div class="navbar-collapse collapse" id="navbarCategoryCollapse">
 				<ul class="navbar-nav navbar-nav-scroll nav-pills-primary-soft text-center ms-auto p-2 p-xl-0">
 					<!-- Nav item Hotel -->
-					
+
                     @auth
+                    @if(auth()->user()->role_id==3)
                     <li class="nav-item"> <a class="nav-link active" href="{{ route('customer.dashboard') }}"><i class="fa-solid fa-hotel me-2"></i>Dashboard</a>	</li>
+                    @endif
+                    @if(auth()->user()->role_id==1)
+                    <li class="nav-item"> <a class="nav-link active" href="{{ route('admin.dashboard') }}"><i class="fa-solid fa-hotel me-2"></i>Dashboard</a>	</li>
+                    @endif
+                    @if(auth()->user()->role_id==2)
+                    <li class="nav-item"> <a class="nav-link active" href="{{ route('hotel.dashboard') }}"><i class="fa-solid fa-hotel me-2"></i>Dashboard</a>	</li>
+                    @endif
 
                 @endauth
 					<!-- Nav item Flight -->
                     @auth
+                    @if(auth()->user()->role_id==3)
                         <li class="nav-item"> <a class="nav-link" href="{{ route('customer.my-reservations.index') }}"><i class="fa-solid fa-sign-in me-2"></i>Mes Reservations</a>	</li>
+                    @endif
+
+                   
 
                     @endauth
                     @guest
                         <li class="nav-item"> <a class="nav-link" href="{{ route('register') }}"><i class="fa-solid fa-sign-in me-2"></i>S'enregistrer</a>	</li>
                     @endguest
-					
+
 
 					<!-- Nav item Tour -->
                     @guest
                     <li class="nav-item"> <a class="nav-link" href="{{ route('login') }}"><i class="fa-solid fa-sign-out me-2"></i>Connexion</a> </li>
                 @endguest
-					
+
 
 					<!-- Nav item Cabs -->
-					<li class="nav-item"> <a class="nav-link" href="{{ route('customer.fast') }}"><i class="fa-solid fa-car me-2"></i>Reserver Rapidement</a></li>
+                    @auth
+                    @if(auth()->user()->role_id=3)
+                    <li class="nav-item"> <a class="nav-link" href="{{ route('customer.fast') }}"><i class="fa-solid fa-car me-2"></i>Reserver Rapidement</a></li>
+                    @endif
+                  
+                    @endauth
+                  
+                    
+					
 				</ul>
 			</div>
 			<!-- Nav category menu END -->
@@ -63,7 +83,7 @@
 			<ul class="nav flex-row align-items-center list-unstyled ms-xl-auto">
 
 				<!-- Notification dropdown START -->
-				
+
 				<!-- Notification dropdown END -->
 
 				<!-- Profile dropdown START -->
@@ -131,7 +151,7 @@
 					<!-- Profile dropdown END -->
 				</li>
                 @endauth
-				
+
 				<!-- Profile dropdown END -->
 			</ul>
 			<!-- Profile and Notification START -->
